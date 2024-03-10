@@ -1,0 +1,9285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DnDCharacterTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2024-03-10T05:03:39" hostname="PC-JOAQUIN" time="0.444">
+  <properties/>
+  <testcase name="testAbilityCalculationsUses3LargestNumbersFromScoresInDescendingOrder()" classname="DnDCharacterTest" time="0.081"/>
+  <testcase name="testAbilityModifierForScore3IsNegative4()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityCalculationsUses3LargestNumbersFromScoresInRandomOrder()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore4IsNegative3()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore5IsNegative3()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore10Is0()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore11Is0()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore12Is1()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore13Is1()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore14Is2()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore15Is2()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore16Is3()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore17Is3()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore18Is4()" classname="DnDCharacterTest" time="0.0"/>
+  <testcase name="testEachAbilityIsOnlyCalculatedOnce()" classname="DnDCharacterTest" time="0.008"/>
+  <testcase name="testAbilityModifierForScore6IsNegative2()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore7IsNegative2()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore8IsNegative1()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testAbilityModifierForScore9IsNegative1()" classname="DnDCharacterTest" time="0.0"/>
+  <testcase name="testAbilityCalculationsUses3LargestNumbersFromFromScoresInAscendingOrder()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testUniqueCharacterIsCreated()" classname="DnDCharacterTest" time="0.114"/>
+  <testcase name="testAbilityCalculationDoesNotChangeInputScores()" classname="DnDCharacterTest" time="0.023"/>
+  <testcase name="testAbilityCalculationsWithLowestEqualNumbers()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testRandomCharacterIsValid()" classname="DnDCharacterTest" time="0.16"/>
+  <testcase name="testAbilityCalculationsWithHighestEqualNumbers()" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testDiceValuesBetween1And6()" classname="DnDCharacterTest" time="0.006"/>
+  <testcase name="test4DiceWereUsedForRollingScores()" classname="DnDCharacterTest" time="0.0"/>
+  <system-out><![CDATA[str: 15
+str: 15
+dex: 14
+dex: 14
+cons: 14
+cons: 14
+int:13
+int:13
+wis: 8
+wis: 8
+cha:11
+cha:11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 17
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 15
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 5
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 16
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 17
+str: 11
+str: 8
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 17
+str: 11
+str: 16
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 17
+str: 11
+str: 8
+str: 11
+str: 14
+str: 11
+str: 8
+str: 11
+str: 16
+str: 11
+str: 15
+str: 11
+str: 9
+str: 11
+str: 8
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 16
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 12
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 17
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 9
+str: 11
+str: 17
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 17
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 12
+str: 11
+str: 18
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 10
+str: 11
+str: 13
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 7
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 9
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 13
+str: 11
+str: 18
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 8
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 18
+dex: 17
+str: 13
+str: 11
+str: 12
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 18
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 13
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 17
+str: 11
+str: 9
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 16
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 7
+str: 11
+str: 14
+str: 11
+str: 17
+str: 11
+str: 9
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 6
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 6
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 13
+str: 11
+str: 16
+str: 11
+str: 9
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 15
+str: 11
+str: 12
+str: 11
+str: 16
+str: 11
+str: 16
+str: 11
+str: 11
+str: 11
+dex: 16
+dex: 17
+str: 13
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 14
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 13
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 11
+str: 11
+dex: 7
+dex: 17
+str: 16
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 13
+str: 11
+str: 13
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 8
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 17
+dex: 17
+cons: 11
+cons: 15
+str: 14
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 6
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 8
+dex: 17
+str: 10
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 14
+str: 11
+str: 18
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 12
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 16
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 18
+dex: 17
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 18
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 7
+dex: 17
+str: 13
+str: 11
+str: 9
+str: 11
+str: 7
+str: 11
+str: 16
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 7
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 15
+str: 11
+str: 14
+str: 11
+str: 8
+str: 11
+str: 17
+str: 11
+str: 17
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 15
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 8
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 15
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 14
+str: 11
+str: 15
+str: 11
+str: 7
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 16
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 9
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 12
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 17
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 9
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 17
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 7
+str: 11
+str: 6
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 16
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 10
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 17
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 16
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 7
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 17
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 16
+str: 11
+str: 7
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 16
+str: 11
+str: 7
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 12
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 16
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 13
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 16
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 14
+str: 11
+str: 14
+str: 11
+str: 17
+str: 11
+str: 18
+str: 11
+str: 13
+str: 11
+str: 17
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 4
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 7
+str: 11
+str: 17
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 13
+str: 11
+str: 6
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 10
+str: 11
+str: 10
+str: 11
+str: 18
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 7
+str: 11
+str: 9
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 8
+str: 11
+str: 18
+str: 11
+str: 13
+str: 11
+str: 8
+str: 11
+str: 16
+str: 11
+str: 9
+str: 11
+str: 18
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 6
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 16
+str: 11
+str: 5
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 14
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 14
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 17
+dex: 17
+cons: 13
+cons: 15
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 10
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 8
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 5
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 17
+dex: 17
+cons: 14
+cons: 15
+str: 14
+str: 11
+str: 15
+str: 11
+str: 18
+str: 11
+str: 13
+str: 11
+str: 7
+str: 11
+str: 14
+str: 11
+str: 6
+str: 11
+str: 18
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 8
+dex: 17
+str: 14
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 18
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 16
+str: 11
+str: 17
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 15
+str: 11
+str: 14
+str: 11
+str: 7
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 13
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 12
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 12
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 10
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 10
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 7
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 6
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 18
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 16
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 14
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 17
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 8
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 18
+str: 11
+str: 9
+str: 11
+str: 9
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 9
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 16
+str: 11
+str: 16
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 17
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 16
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 14
+str: 11
+str: 17
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 10
+str: 11
+str: 16
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 7
+str: 11
+str: 17
+str: 11
+str: 14
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 18
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 9
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 11
+str: 11
+dex: 17
+dex: 17
+cons: 8
+cons: 15
+str: 12
+str: 11
+str: 5
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 14
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 8
+dex: 17
+str: 14
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 5
+str: 11
+str: 16
+str: 11
+str: 6
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 17
+dex: 17
+cons: 11
+cons: 15
+str: 9
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 14
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 6
+str: 11
+str: 13
+str: 11
+str: 6
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 16
+str: 11
+str: 15
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 15
+str: 11
+str: 9
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 17
+str: 11
+str: 15
+str: 11
+str: 17
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 12
+str: 11
+str: 5
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 13
+str: 11
+str: 6
+str: 11
+str: 8
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 9
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 18
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 5
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 8
+str: 11
+str: 17
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 17
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 16
+str: 11
+str: 12
+str: 11
+str: 17
+str: 11
+str: 13
+str: 11
+str: 17
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 10
+dex: 17
+str: 12
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 16
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 9
+str: 11
+str: 9
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 12
+str: 11
+str: 16
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 12
+str: 11
+str: 8
+str: 11
+str: 15
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 18
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 13
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 10
+str: 11
+str: 8
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 15
+str: 11
+str: 8
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 15
+str: 11
+str: 12
+str: 11
+str: 7
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 8
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 7
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 15
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 17
+str: 11
+str: 10
+str: 11
+str: 15
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 15
+str: 11
+str: 10
+str: 11
+str: 17
+str: 11
+str: 16
+str: 11
+str: 17
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 9
+str: 11
+str: 13
+str: 11
+str: 7
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 9
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 7
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 17
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 14
+str: 11
+str: 15
+str: 11
+str: 12
+str: 11
+str: 7
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 12
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 14
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 15
+str: 11
+str: 7
+str: 11
+str: 11
+str: 11
+dex: 13
+dex: 17
+str: 9
+str: 11
+str: 8
+str: 11
+str: 10
+str: 11
+str: 18
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 16
+str: 11
+str: 13
+str: 11
+str: 9
+str: 11
+str: 17
+str: 11
+str: 17
+str: 11
+str: 12
+str: 11
+str: 8
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 17
+str: 11
+str: 13
+str: 11
+str: 7
+str: 11
+str: 11
+str: 11
+dex: 16
+dex: 17
+str: 17
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 14
+str: 11
+str: 16
+str: 11
+str: 12
+str: 11
+str: 18
+str: 11
+str: 8
+str: 11
+str: 14
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 12
+dex: 17
+str: 12
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 12
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 9
+str: 11
+str: 12
+str: 11
+str: 12
+str: 11
+str: 7
+str: 11
+str: 16
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 11
+str: 11
+dex: 8
+dex: 17
+str: 11
+str: 11
+dex: 8
+dex: 17
+str: 9
+str: 11
+str: 11
+str: 11
+dex: 14
+dex: 17
+str: 15
+str: 11
+str: 8
+str: 11
+str: 13
+str: 11
+str: 16
+str: 11
+str: 10
+str: 11
+str: 13
+str: 11
+str: 11
+str: 11
+dex: 15
+dex: 17
+str: 10
+str: 11
+str: 13
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 11
+str: 11
+dex: 7
+dex: 17
+str: 15
+str: 11
+str: 13
+str: 11
+str: 15
+str: 11
+str: 13
+str: 11
+str: 7
+str: 11
+str: 13
+str: 11
+str: 12
+str: 11
+str: 9
+str: 11
+str: 16
+str: 11
+str: 11
+str: 11
+dex: 16
+dex: 17
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 17
+str: 11
+str: 8
+str: 11
+str: 10
+str: 11
+str: 10
+str: 11
+str: 16
+str: 11
+str: 16
+str: 11
+str: 14
+str: 11
+str: 15
+str: 11
+str: 11
+str: 11
+dex: 9
+dex: 17
+str: 9
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 13
+str: 11
+str: 14
+str: 11
+str: 10
+str: 11
+str: 12
+str: 11
+str: 10
+str: 11
+str: 11
+str: 11
+dex: 11
+dex: 17
+str: 9
+str: 11
+str: 7
+dex: 16
+cons: 12
+int:13
+wis: 12
+cha:16
+cons: 12
+str: 15
+dex: 12
+cons: 14
+int:11
+wis: 13
+cha:12
+cons: 14
+str: 15
+dex: 8
+cons: 13
+int:15
+wis: 9
+cha:13
+cons: 13
+str: 14
+dex: 12
+cons: 13
+int:7
+wis: 15
+cha:18
+cons: 13
+str: 17
+dex: 13
+cons: 16
+int:12
+wis: 9
+cha:13
+cons: 16
+str: 7
+dex: 12
+cons: 8
+int:16
+wis: 15
+cha:11
+cons: 8
+str: 13
+dex: 14
+cons: 15
+int:10
+wis: 16
+cha:12
+cons: 15
+str: 14
+dex: 13
+cons: 13
+int:16
+wis: 15
+cha:11
+cons: 13
+str: 13
+dex: 12
+cons: 13
+int:13
+wis: 12
+cha:13
+cons: 13
+str: 12
+dex: 9
+cons: 7
+int:13
+wis: 10
+cha:14
+cons: 7
+str: 12
+dex: 11
+cons: 12
+int:11
+wis: 9
+cha:14
+cons: 12
+str: 12
+dex: 9
+cons: 14
+int:6
+wis: 13
+cha:10
+cons: 14
+str: 8
+dex: 13
+cons: 12
+int:14
+wis: 13
+cha:14
+cons: 12
+str: 15
+dex: 8
+cons: 18
+int:13
+wis: 16
+cha:16
+cons: 18
+str: 17
+dex: 14
+cons: 12
+int:12
+wis: 5
+cha:7
+cons: 12
+str: 7
+dex: 9
+cons: 5
+int:13
+wis: 12
+cha:16
+cons: 5
+str: 6
+dex: 11
+cons: 7
+int:7
+wis: 10
+cha:16
+cons: 7
+str: 9
+dex: 7
+cons: 9
+int:18
+wis: 12
+cha:16
+cons: 9
+str: 8
+dex: 17
+cons: 7
+int:14
+wis: 16
+cha:10
+cons: 7
+str: 11
+dex: 14
+cons: 10
+int:14
+wis: 14
+cha:14
+cons: 10
+str: 15
+dex: 12
+cons: 9
+int:7
+wis: 17
+cha:7
+cons: 9
+str: 16
+dex: 12
+cons: 16
+int:11
+wis: 13
+cha:13
+cons: 16
+str: 13
+dex: 11
+cons: 13
+int:14
+wis: 14
+cha:12
+cons: 13
+str: 14
+dex: 17
+cons: 15
+int:16
+wis: 16
+cha:13
+cons: 15
+str: 13
+dex: 15
+cons: 8
+int:15
+wis: 8
+cha:9
+cons: 8
+str: 13
+dex: 14
+cons: 14
+int:12
+wis: 11
+cha:10
+cons: 14
+str: 12
+dex: 10
+cons: 18
+int:8
+wis: 14
+cha:14
+cons: 18
+str: 14
+dex: 12
+cons: 17
+int:12
+wis: 13
+cha:17
+cons: 17
+str: 15
+dex: 6
+cons: 14
+int:15
+wis: 15
+cha:11
+cons: 14
+str: 8
+dex: 11
+cons: 8
+int:12
+wis: 12
+cha:14
+cons: 8
+str: 10
+dex: 12
+cons: 12
+int:10
+wis: 13
+cha:17
+cons: 12
+str: 13
+dex: 10
+cons: 15
+int:6
+wis: 7
+cha:13
+cons: 15
+str: 10
+dex: 10
+cons: 9
+int:9
+wis: 13
+cha:13
+cons: 9
+str: 11
+dex: 12
+cons: 11
+int:12
+wis: 12
+cha:14
+cons: 11
+str: 13
+dex: 15
+cons: 13
+int:11
+wis: 11
+cha:9
+cons: 13
+str: 12
+dex: 9
+cons: 16
+int:13
+wis: 9
+cha:6
+cons: 16
+str: 13
+dex: 14
+cons: 15
+int:17
+wis: 9
+cha:13
+cons: 15
+str: 11
+dex: 12
+cons: 11
+int:16
+wis: 7
+cha:15
+cons: 11
+str: 13
+dex: 10
+cons: 13
+int:11
+wis: 9
+cha:11
+cons: 13
+str: 10
+dex: 11
+cons: 14
+int:13
+wis: 7
+cha:10
+cons: 14
+str: 12
+dex: 17
+cons: 13
+int:11
+wis: 11
+cha:11
+cons: 13
+str: 8
+dex: 15
+cons: 12
+int:18
+wis: 9
+cha:14
+cons: 12
+str: 9
+dex: 10
+cons: 9
+int:14
+wis: 13
+cha:9
+cons: 9
+str: 16
+dex: 10
+cons: 13
+int:10
+wis: 14
+cha:12
+cons: 13
+str: 12
+dex: 15
+cons: 11
+int:11
+wis: 14
+cha:10
+cons: 11
+str: 9
+dex: 11
+cons: 10
+int:11
+wis: 13
+cha:12
+cons: 10
+str: 12
+dex: 11
+cons: 9
+int:10
+wis: 10
+cha:11
+cons: 9
+str: 15
+dex: 15
+cons: 12
+int:10
+wis: 14
+cha:17
+cons: 12
+str: 6
+dex: 12
+cons: 17
+int:11
+wis: 15
+cha:11
+cons: 17
+str: 15
+dex: 11
+cons: 13
+int:15
+wis: 9
+cha:13
+cons: 13
+str: 9
+dex: 14
+cons: 15
+int:13
+wis: 10
+cha:10
+cons: 15
+str: 14
+dex: 10
+cons: 12
+int:11
+wis: 7
+cha:12
+cons: 12
+str: 15
+dex: 14
+cons: 7
+int:9
+wis: 10
+cha:14
+cons: 7
+str: 15
+dex: 10
+cons: 12
+int:14
+wis: 13
+cha:10
+cons: 12
+str: 13
+dex: 12
+cons: 9
+int:16
+wis: 17
+cha:13
+cons: 9
+str: 10
+dex: 16
+cons: 9
+int:15
+wis: 10
+cha:10
+cons: 9
+str: 13
+dex: 14
+cons: 11
+int:8
+wis: 16
+cha:17
+cons: 11
+str: 10
+dex: 13
+cons: 12
+int:12
+wis: 4
+cha:13
+cons: 12
+str: 10
+dex: 14
+cons: 13
+int:10
+wis: 11
+cha:10
+cons: 13
+str: 13
+dex: 14
+cons: 17
+int:12
+wis: 7
+cha:16
+cons: 17
+str: 15
+dex: 14
+cons: 11
+int:13
+wis: 14
+cha:9
+cons: 11
+str: 15
+dex: 14
+cons: 15
+int:6
+wis: 14
+cha:8
+cons: 15
+str: 13
+dex: 10
+cons: 16
+int:15
+wis: 14
+cha:14
+cons: 16
+str: 12
+dex: 9
+cons: 11
+int:11
+wis: 13
+cha:15
+cons: 11
+str: 15
+dex: 8
+cons: 13
+int:13
+wis: 16
+cha:13
+cons: 13
+str: 8
+dex: 10
+cons: 13
+int:13
+wis: 12
+cha:7
+cons: 13
+str: 13
+dex: 11
+cons: 9
+int:11
+wis: 14
+cha:16
+cons: 9
+str: 14
+dex: 12
+cons: 13
+int:14
+wis: 9
+cha:9
+cons: 13
+str: 17
+dex: 15
+cons: 15
+int:11
+wis: 11
+cha:12
+cons: 15
+str: 14
+dex: 9
+cons: 13
+int:12
+wis: 10
+cha:9
+cons: 13
+str: 12
+dex: 14
+cons: 14
+int:7
+wis: 12
+cha:13
+cons: 14
+str: 13
+dex: 15
+cons: 12
+int:15
+wis: 10
+cha:10
+cons: 12
+str: 16
+dex: 15
+cons: 17
+int:16
+wis: 14
+cha:12
+cons: 17
+str: 7
+dex: 16
+cons: 9
+int:14
+wis: 16
+cha:9
+cons: 9
+str: 16
+dex: 15
+cons: 7
+int:11
+wis: 12
+cha:8
+cons: 7
+str: 13
+dex: 15
+cons: 14
+int:9
+wis: 11
+cha:11
+cons: 14
+str: 5
+dex: 16
+cons: 15
+int:10
+wis: 17
+cha:14
+cons: 15
+str: 15
+dex: 11
+cons: 15
+int:8
+wis: 11
+cha:10
+cons: 15
+str: 3
+dex: 11
+cons: 12
+int:16
+wis: 7
+cha:14
+cons: 12
+str: 14
+dex: 10
+cons: 8
+int:10
+wis: 12
+cha:9
+cons: 8
+str: 12
+dex: 10
+cons: 14
+int:10
+wis: 12
+cha:11
+cons: 14
+str: 16
+dex: 14
+cons: 10
+int:14
+wis: 11
+cha:10
+cons: 10
+str: 11
+dex: 8
+cons: 12
+int:9
+wis: 14
+cha:9
+cons: 12
+str: 11
+dex: 12
+cons: 14
+int:13
+wis: 13
+cha:15
+cons: 14
+str: 13
+dex: 14
+cons: 11
+int:15
+wis: 16
+cha:12
+cons: 11
+str: 16
+dex: 9
+cons: 13
+int:11
+wis: 13
+cha:9
+cons: 13
+str: 11
+dex: 11
+cons: 11
+int:10
+wis: 13
+cha:15
+cons: 11
+str: 17
+dex: 6
+cons: 12
+int:13
+wis: 13
+cha:13
+cons: 12
+str: 17
+dex: 14
+cons: 11
+int:10
+wis: 13
+cha:15
+cons: 11
+str: 12
+dex: 12
+cons: 13
+int:14
+wis: 7
+cha:14
+cons: 13
+str: 9
+dex: 9
+cons: 16
+int:9
+wis: 18
+cha:12
+cons: 16
+str: 13
+dex: 9
+cons: 15
+int:16
+wis: 9
+cha:9
+cons: 15
+str: 13
+dex: 8
+cons: 11
+int:14
+wis: 10
+cha:14
+cons: 11
+str: 13
+dex: 13
+cons: 14
+int:11
+wis: 17
+cha:7
+cons: 14
+str: 11
+dex: 15
+cons: 13
+int:11
+wis: 9
+cha:13
+cons: 13
+str: 17
+dex: 12
+cons: 14
+int:17
+wis: 16
+cha:13
+cons: 14
+str: 7
+dex: 14
+cons: 14
+int:17
+wis: 18
+cha:16
+cons: 14
+str: 14
+dex: 8
+cons: 16
+int:13
+wis: 8
+cha:11
+cons: 16
+str: 14
+dex: 14
+cons: 10
+int:13
+wis: 12
+cha:12
+cons: 10
+str: 18
+dex: 11
+cons: 14
+int:12
+wis: 8
+cha:6
+cons: 14
+str: 9
+dex: 13
+cons: 15
+int:13
+wis: 15
+cha:5
+cons: 15
+str: 11
+dex: 4
+cons: 9
+int:13
+wis: 10
+cha:12
+cons: 9
+str: 5
+dex: 14
+cons: 12
+int:10
+wis: 12
+cha:13
+cons: 12
+str: 15
+dex: 12
+cons: 11
+int:17
+wis: 14
+cha:11
+cons: 11
+str: 17
+dex: 12
+cons: 13
+int:14
+wis: 16
+cha:16
+cons: 13
+str: 11
+dex: 13
+cons: 10
+int:18
+wis: 9
+cha:10
+cons: 10
+str: 12
+dex: 14
+cons: 13
+int:10
+wis: 16
+cha:15
+cons: 13
+str: 14
+dex: 12
+cons: 15
+int:14
+wis: 12
+cha:14
+cons: 15
+str: 14
+dex: 14
+cons: 8
+int:15
+wis: 10
+cha:9
+cons: 8
+str: 14
+dex: 9
+cons: 12
+int:12
+wis: 12
+cha:11
+cons: 12
+str: 14
+dex: 14
+cons: 16
+int:18
+wis: 12
+cha:14
+cons: 16
+str: 15
+dex: 11
+cons: 14
+int:14
+wis: 13
+cha:14
+cons: 14
+str: 16
+dex: 13
+cons: 9
+int:13
+wis: 11
+cha:9
+cons: 9
+str: 13
+dex: 15
+cons: 16
+int:13
+wis: 16
+cha:13
+cons: 16
+str: 13
+dex: 8
+cons: 7
+int:11
+wis: 14
+cha:10
+cons: 7
+str: 16
+dex: 15
+cons: 16
+int:14
+wis: 10
+cha:8
+cons: 16
+str: 8
+dex: 9
+cons: 9
+int:16
+wis: 14
+cha:10
+cons: 9
+str: 11
+dex: 9
+cons: 10
+int:17
+wis: 13
+cha:7
+cons: 10
+str: 12
+dex: 16
+cons: 15
+int:17
+wis: 13
+cha:12
+cons: 15
+str: 9
+dex: 17
+cons: 6
+int:11
+wis: 10
+cha:12
+cons: 6
+str: 11
+dex: 13
+cons: 15
+int:15
+wis: 13
+cha:11
+cons: 15
+str: 13
+dex: 13
+cons: 17
+int:13
+wis: 11
+cha:15
+cons: 17
+str: 9
+dex: 13
+cons: 18
+int:12
+wis: 8
+cha:5
+cons: 18
+str: 7
+dex: 9
+cons: 15
+int:15
+wis: 11
+cha:14
+cons: 15
+str: 8
+dex: 14
+cons: 14
+int:10
+wis: 11
+cha:11
+cons: 14
+str: 11
+dex: 10
+cons: 7
+int:9
+wis: 9
+cha:13
+cons: 7
+str: 14
+dex: 11
+cons: 14
+int:14
+wis: 11
+cha:15
+cons: 14
+str: 11
+dex: 18
+cons: 10
+int:10
+wis: 13
+cha:13
+cons: 10
+str: 12
+dex: 11
+cons: 18
+int:17
+wis: 10
+cha:17
+cons: 18
+str: 15
+dex: 13
+cons: 13
+int:12
+wis: 16
+cha:7
+cons: 13
+str: 16
+dex: 16
+cons: 11
+int:7
+wis: 12
+cha:11
+cons: 11
+str: 12
+dex: 13
+cons: 18
+int:15
+wis: 15
+cha:8
+cons: 18
+str: 12
+dex: 9
+cons: 11
+int:16
+wis: 15
+cha:16
+cons: 11
+str: 13
+dex: 10
+cons: 14
+int:9
+wis: 16
+cha:16
+cons: 14
+str: 17
+dex: 14
+cons: 6
+int:10
+wis: 10
+cha:4
+cons: 6
+str: 13
+dex: 14
+cons: 15
+int:17
+wis: 13
+cha:15
+cons: 15
+str: 13
+dex: 13
+cons: 14
+int:12
+wis: 9
+cha:8
+cons: 14
+str: 11
+dex: 14
+cons: 11
+int:13
+wis: 11
+cha:10
+cons: 11
+str: 8
+dex: 10
+cons: 15
+int:16
+wis: 8
+cha:11
+cons: 15
+str: 5
+dex: 13
+cons: 12
+int:10
+wis: 12
+cha:12
+cons: 12
+str: 15
+dex: 10
+cons: 7
+int:13
+wis: 16
+cha:14
+cons: 7
+str: 15
+dex: 11
+cons: 13
+int:9
+wis: 15
+cha:11
+cons: 13
+str: 15
+dex: 8
+cons: 13
+int:12
+wis: 9
+cha:15
+cons: 13
+str: 15
+dex: 13
+cons: 15
+int:10
+wis: 13
+cha:12
+cons: 15
+str: 14
+dex: 8
+cons: 13
+int:12
+wis: 13
+cha:13
+cons: 13
+str: 14
+dex: 11
+cons: 14
+int:8
+wis: 13
+cha:15
+cons: 14
+str: 11
+dex: 14
+cons: 6
+int:10
+wis: 6
+cha:15
+cons: 6
+str: 10
+dex: 16
+cons: 10
+int:11
+wis: 10
+cha:12
+cons: 10
+str: 17
+dex: 13
+cons: 6
+int:11
+wis: 14
+cha:11
+cons: 6
+str: 6
+dex: 14
+cons: 10
+int:13
+wis: 9
+cha:17
+cons: 10
+str: 7
+dex: 15
+cons: 12
+int:17
+wis: 11
+cha:15
+cons: 12
+str: 12
+dex: 13
+cons: 15
+int:7
+wis: 9
+cha:10
+cons: 15
+str: 12
+dex: 11
+cons: 12
+int:9
+wis: 18
+cha:18
+cons: 12
+str: 14
+dex: 14
+cons: 16
+int:12
+wis: 14
+cha:12
+cons: 16
+str: 13
+dex: 10
+cons: 13
+int:12
+wis: 14
+cha:13
+cons: 13
+str: 15
+dex: 8
+cons: 12
+int:17
+wis: 11
+cha:11
+cons: 12
+str: 16
+dex: 10
+cons: 16
+int:13
+wis: 11
+cha:15
+cons: 16
+str: 16
+dex: 15
+cons: 15
+int:12
+wis: 10
+cha:10
+cons: 15
+str: 17
+dex: 16
+cons: 7
+int:11
+wis: 15
+cha:16
+cons: 7
+str: 4
+dex: 15
+cons: 14
+int:16
+wis: 14
+cha:16
+cons: 14
+str: 15
+dex: 16
+cons: 12
+int:11
+wis: 10
+cha:12
+cons: 12
+str: 12
+dex: 13
+cons: 8
+int:10
+wis: 13
+cha:13
+cons: 8
+str: 11
+dex: 10
+cons: 15
+int:10
+wis: 15
+cha:11
+cons: 15
+str: 14
+dex: 9
+cons: 11
+int:11
+wis: 15
+cha:9
+cons: 11
+str: 12
+dex: 7
+cons: 13
+int:13
+wis: 10
+cha:16
+cons: 13
+str: 18
+dex: 11
+cons: 15
+int:9
+wis: 15
+cha:13
+cons: 15
+str: 12
+dex: 8
+cons: 10
+int:9
+wis: 9
+cha:5
+cons: 10
+str: 9
+dex: 11
+cons: 18
+int:17
+wis: 9
+cha:11
+cons: 18
+str: 11
+dex: 14
+cons: 9
+int:15
+wis: 15
+cha:9
+cons: 9
+str: 15
+dex: 10
+cons: 12
+int:13
+wis: 13
+cha:9
+cons: 12
+str: 10
+dex: 9
+cons: 16
+int:9
+wis: 11
+cha:8
+cons: 16
+str: 9
+dex: 12
+cons: 11
+int:13
+wis: 8
+cha:7
+cons: 11
+str: 11
+dex: 10
+cons: 12
+int:10
+wis: 9
+cha:17
+cons: 12
+str: 13
+dex: 13
+cons: 11
+int:12
+wis: 12
+cha:17
+cons: 11
+str: 16
+dex: 14
+cons: 8
+int:9
+wis: 8
+cha:14
+cons: 8
+str: 13
+dex: 13
+cons: 10
+int:13
+wis: 15
+cha:11
+cons: 10
+str: 10
+dex: 6
+cons: 14
+int:4
+wis: 11
+cha:12
+cons: 14
+str: 11
+dex: 14
+cons: 8
+int:14
+wis: 18
+cha:16
+cons: 8
+str: 10
+dex: 7
+cons: 11
+int:14
+wis: 11
+cha:8
+cons: 11
+str: 15
+dex: 13
+cons: 14
+int:11
+wis: 8
+cha:10
+cons: 14
+str: 13
+dex: 9
+cons: 10
+int:12
+wis: 9
+cha:11
+cons: 10
+str: 12
+dex: 14
+cons: 7
+int:9
+wis: 9
+cha:10
+cons: 7
+str: 9
+dex: 16
+cons: 10
+int:10
+wis: 10
+cha:18
+cons: 10
+str: 16
+dex: 14
+cons: 15
+int:9
+wis: 16
+cha:17
+cons: 15
+str: 12
+dex: 17
+cons: 16
+int:15
+wis: 14
+cha:7
+cons: 16
+str: 8
+dex: 17
+cons: 4
+int:16
+wis: 15
+cha:7
+cons: 4
+str: 14
+dex: 16
+cons: 13
+int:15
+wis: 14
+cha:14
+cons: 13
+str: 12
+dex: 11
+cons: 14
+int:15
+wis: 10
+cha:11
+cons: 14
+str: 18
+dex: 16
+cons: 9
+int:13
+wis: 15
+cha:10
+cons: 9
+str: 13
+dex: 14
+cons: 17
+int:18
+wis: 15
+cha:17
+cons: 17
+str: 12
+dex: 8
+cons: 16
+int:12
+wis: 7
+cha:9
+cons: 16
+str: 15
+dex: 17
+cons: 9
+int:15
+wis: 15
+cha:10
+cons: 9
+str: 12
+dex: 17
+cons: 11
+int:14
+wis: 16
+cha:16
+cons: 11
+str: 15
+dex: 12
+cons: 9
+int:15
+wis: 14
+cha:15
+cons: 9
+str: 12
+dex: 13
+cons: 11
+int:12
+wis: 11
+cha:13
+cons: 11
+str: 9
+dex: 9
+cons: 12
+int:16
+wis: 14
+cha:13
+cons: 12
+str: 12
+dex: 15
+cons: 17
+int:13
+wis: 9
+cha:8
+cons: 17
+str: 11
+dex: 7
+cons: 11
+int:6
+wis: 13
+cha:8
+cons: 11
+str: 8
+dex: 12
+cons: 13
+int:16
+wis: 7
+cha:12
+cons: 13
+str: 11
+dex: 11
+cons: 14
+int:13
+wis: 18
+cha:11
+cons: 14
+str: 13
+dex: 16
+cons: 10
+int:8
+wis: 11
+cha:13
+cons: 10
+str: 12
+dex: 14
+cons: 12
+int:9
+wis: 14
+cha:13
+cons: 12
+str: 9
+dex: 13
+cons: 13
+int:12
+wis: 10
+cha:16
+cons: 13
+str: 10
+dex: 11
+cons: 16
+int:8
+wis: 13
+cha:13
+cons: 16
+str: 14
+dex: 17
+cons: 10
+int:17
+wis: 10
+cha:13
+cons: 10
+str: 12
+dex: 12
+cons: 14
+int:9
+wis: 10
+cha:14
+cons: 14
+str: 14
+dex: 17
+cons: 8
+int:12
+wis: 15
+cha:13
+cons: 8
+str: 12
+dex: 8
+cons: 13
+int:15
+wis: 12
+cha:16
+cons: 13
+str: 10
+dex: 14
+cons: 15
+int:11
+wis: 7
+cha:17
+cons: 15
+str: 13
+dex: 16
+cons: 10
+int:10
+wis: 11
+cha:9
+cons: 10
+str: 15
+dex: 17
+cons: 12
+int:14
+wis: 10
+cha:18
+cons: 12
+str: 12
+dex: 14
+cons: 12
+int:10
+wis: 15
+cha:11
+cons: 12
+str: 13
+dex: 11
+cons: 15
+int:15
+wis: 8
+cha:16
+cons: 15
+str: 14
+dex: 9
+cons: 10
+int:12
+wis: 13
+cha:10
+cons: 10
+str: 11
+dex: 17
+cons: 12
+int:14
+wis: 12
+cha:15
+cons: 12
+str: 15
+dex: 10
+cons: 9
+int:11
+wis: 11
+cha:11
+cons: 9
+str: 14
+dex: 13
+cons: 10
+int:16
+wis: 15
+cha:17
+cons: 10
+str: 12
+dex: 15
+cons: 16
+int:14
+wis: 16
+cha:18
+cons: 16
+str: 12
+dex: 16
+cons: 14
+int:15
+wis: 8
+cha:13
+cons: 14
+str: 16
+dex: 13
+cons: 11
+int:15
+wis: 11
+cha:16
+cons: 11
+str: 14
+dex: 16
+cons: 14
+int:15
+wis: 14
+cha:10
+cons: 14
+str: 13
+dex: 12
+cons: 12
+int:15
+wis: 15
+cha:17
+cons: 12
+str: 14
+dex: 16
+cons: 15
+int:10
+wis: 13
+cha:17
+cons: 15
+str: 15
+dex: 12
+cons: 13
+int:7
+wis: 11
+cha:12
+cons: 13
+str: 13
+dex: 12
+cons: 7
+int:13
+wis: 11
+cha:9
+cons: 7
+str: 15
+dex: 13
+cons: 13
+int:12
+wis: 9
+cha:14
+cons: 13
+str: 13
+dex: 13
+cons: 14
+int:15
+wis: 11
+cha:8
+cons: 14
+str: 9
+dex: 14
+cons: 14
+int:16
+wis: 12
+cha:15
+cons: 14
+str: 13
+dex: 12
+cons: 16
+int:10
+wis: 12
+cha:12
+cons: 16
+str: 13
+dex: 8
+cons: 16
+int:9
+wis: 13
+cha:12
+cons: 16
+str: 16
+dex: 12
+cons: 15
+int:11
+wis: 15
+cha:12
+cons: 15
+str: 9
+dex: 15
+cons: 11
+int:9
+wis: 14
+cha:10
+cons: 11
+str: 12
+dex: 14
+cons: 9
+int:9
+wis: 10
+cha:11
+cons: 9
+str: 13
+dex: 11
+cons: 15
+int:14
+wis: 15
+cha:10
+cons: 15
+str: 10
+dex: 15
+cons: 12
+int:13
+wis: 12
+cha:14
+cons: 12
+str: 10
+dex: 13
+cons: 13
+int:16
+wis: 10
+cha:9
+cons: 13
+str: 17
+dex: 12
+cons: 13
+int:12
+wis: 13
+cha:18
+cons: 13
+str: 11
+dex: 16
+cons: 4
+int:12
+wis: 12
+cha:16
+cons: 4
+str: 7
+dex: 11
+cons: 13
+int:4
+wis: 16
+cha:14
+cons: 13
+str: 8
+dex: 10
+cons: 6
+int:13
+wis: 15
+cha:14
+cons: 6
+str: 7
+dex: 14
+cons: 16
+int:14
+wis: 17
+cha:11
+cons: 16
+str: 8
+dex: 15
+cons: 17
+int:12
+wis: 14
+cha:9
+cons: 17
+str: 12
+dex: 11
+cons: 13
+int:18
+wis: 13
+cha:10
+cons: 13
+str: 9
+dex: 12
+cons: 11
+int:10
+wis: 12
+cha:12
+cons: 11
+str: 18
+dex: 17
+cons: 15
+int:8
+wis: 12
+cha:14
+cons: 15
+str: 12
+dex: 17
+cons: 15
+int:17
+wis: 12
+cha:11
+cons: 15
+str: 13
+dex: 16
+cons: 6
+int:16
+wis: 16
+cha:14
+cons: 6
+str: 12
+dex: 15
+cons: 9
+int:11
+wis: 14
+cha:12
+cons: 9
+str: 10
+dex: 8
+cons: 15
+int:16
+wis: 7
+cha:15
+cons: 15
+str: 8
+dex: 6
+cons: 8
+int:14
+wis: 12
+cha:9
+cons: 8
+str: 14
+dex: 9
+cons: 11
+int:16
+wis: 9
+cha:14
+cons: 11
+str: 10
+dex: 12
+cons: 16
+int:12
+wis: 14
+cha:10
+cons: 16
+str: 11
+dex: 8
+cons: 14
+int:13
+wis: 12
+cha:11
+cons: 14
+str: 15
+dex: 17
+cons: 11
+int:13
+wis: 8
+cha:3
+cons: 11
+str: 14
+dex: 15
+cons: 13
+int:18
+wis: 12
+cha:11
+cons: 13
+str: 12
+dex: 13
+cons: 15
+int:14
+wis: 15
+cha:14
+cons: 15
+str: 9
+dex: 14
+cons: 10
+int:13
+wis: 17
+cha:10
+cons: 10
+str: 15
+dex: 12
+cons: 5
+int:10
+wis: 14
+cha:9
+cons: 5
+str: 15
+dex: 16
+cons: 11
+int:14
+wis: 12
+cha:9
+cons: 11
+str: 17
+dex: 11
+cons: 10
+int:15
+wis: 12
+cha:13
+cons: 10
+str: 15
+dex: 12
+cons: 15
+int:13
+wis: 16
+cha:16
+cons: 15
+str: 16
+dex: 9
+cons: 8
+int:13
+wis: 15
+cha:16
+cons: 8
+str: 14
+dex: 12
+cons: 10
+int:11
+wis: 8
+cha:15
+cons: 10
+str: 11
+dex: 12
+cons: 16
+int:11
+wis: 16
+cha:14
+cons: 16
+str: 15
+dex: 12
+cons: 8
+int:14
+wis: 12
+cha:12
+cons: 8
+str: 11
+dex: 9
+cons: 16
+int:11
+wis: 13
+cha:11
+cons: 16
+str: 9
+dex: 10
+cons: 13
+int:11
+wis: 14
+cha:14
+cons: 13
+str: 6
+dex: 16
+cons: 12
+int:11
+wis: 8
+cha:9
+cons: 12
+str: 15
+dex: 11
+cons: 13
+int:12
+wis: 12
+cha:12
+cons: 13
+str: 17
+dex: 12
+cons: 14
+int:7
+wis: 12
+cha:9
+cons: 14
+str: 15
+dex: 10
+cons: 9
+int:10
+wis: 7
+cha:14
+cons: 9
+str: 16
+dex: 9
+cons: 10
+int:14
+wis: 14
+cha:12
+cons: 10
+str: 6
+dex: 12
+cons: 12
+int:18
+wis: 15
+cha:9
+cons: 12
+str: 9
+dex: 13
+cons: 11
+int:13
+wis: 11
+cha:17
+cons: 11
+str: 15
+dex: 11
+cons: 15
+int:10
+wis: 7
+cha:13
+cons: 15
+str: 12
+dex: 17
+cons: 7
+int:12
+wis: 11
+cha:15
+cons: 7
+str: 9
+dex: 16
+cons: 10
+int:7
+wis: 13
+cha:16
+cons: 10
+str: 11
+dex: 15
+cons: 15
+int:15
+wis: 13
+cha:15
+cons: 15
+str: 12
+dex: 16
+cons: 16
+int:16
+wis: 14
+cha:10
+cons: 16
+str: 10
+dex: 12
+cons: 9
+int:7
+wis: 14
+cha:7
+cons: 9
+str: 10
+dex: 13
+cons: 6
+int:14
+wis: 12
+cha:6
+cons: 6
+str: 13
+dex: 8
+cons: 15
+int:9
+wis: 14
+cha:5
+cons: 15
+str: 14
+dex: 12
+cons: 12
+int:14
+wis: 13
+cha:10
+cons: 12
+str: 13
+dex: 15
+cons: 8
+int:15
+wis: 8
+cha:15
+cons: 8
+str: 13
+dex: 12
+cons: 9
+int:14
+wis: 11
+cha:13
+cons: 9
+str: 10
+dex: 14
+cons: 15
+int:9
+wis: 14
+cha:16
+cons: 15
+str: 16
+dex: 13
+cons: 10
+int:13
+wis: 14
+cha:8
+cons: 10
+str: 8
+dex: 13
+cons: 9
+int:6
+wis: 11
+cha:12
+cons: 9
+str: 15
+dex: 10
+cons: 12
+int:15
+wis: 11
+cha:16
+cons: 12
+str: 13
+dex: 15
+cons: 10
+int:13
+wis: 18
+cha:10
+cons: 10
+str: 15
+dex: 16
+cons: 6
+int:13
+wis: 15
+cha:6
+cons: 6
+str: 13
+dex: 11
+cons: 11
+int:14
+wis: 10
+cha:16
+cons: 11
+str: 13
+dex: 9
+cons: 14
+int:18
+wis: 12
+cha:17
+cons: 14
+str: 14
+dex: 17
+cons: 12
+int:12
+wis: 12
+cha:18
+cons: 12
+str: 12
+dex: 13
+cons: 9
+int:18
+wis: 14
+cha:14
+cons: 9
+str: 12
+dex: 13
+cons: 18
+int:15
+wis: 12
+cha:15
+cons: 18
+str: 8
+dex: 13
+cons: 10
+int:14
+wis: 8
+cha:8
+cons: 10
+str: 14
+dex: 14
+cons: 14
+int:9
+wis: 7
+cha:8
+cons: 14
+str: 16
+dex: 11
+cons: 11
+int:12
+wis: 11
+cha:9
+cons: 11
+str: 13
+dex: 12
+cons: 11
+int:16
+wis: 11
+cha:10
+cons: 11
+str: 12
+dex: 13
+cons: 14
+int:16
+wis: 12
+cha:14
+cons: 14
+str: 13
+dex: 14
+cons: 16
+int:15
+wis: 17
+cha:11
+cons: 16
+str: 11
+dex: 18
+cons: 9
+int:14
+wis: 10
+cha:13
+cons: 9
+str: 15
+dex: 17
+cons: 12
+int:13
+wis: 7
+cha:11
+cons: 12
+str: 12
+dex: 14
+cons: 16
+int:11
+wis: 15
+cha:15
+cons: 16
+str: 11
+dex: 16
+cons: 17
+int:11
+wis: 13
+cha:14
+cons: 17
+str: 11
+dex: 15
+cons: 14
+int:10
+wis: 13
+cha:16
+cons: 14
+str: 13
+dex: 16
+cons: 14
+int:15
+wis: 9
+cha:9
+cons: 14
+str: 13
+dex: 16
+cons: 14
+int:13
+wis: 11
+cha:12
+cons: 14
+str: 11
+dex: 12
+cons: 11
+int:11
+wis: 12
+cha:10
+cons: 11
+str: 12
+dex: 9
+cons: 9
+int:17
+wis: 9
+cha:13
+cons: 9
+str: 12
+dex: 10
+cons: 11
+int:16
+wis: 7
+cha:15
+cons: 11
+str: 9
+dex: 12
+cons: 16
+int:12
+wis: 16
+cha:12
+cons: 16
+str: 14
+dex: 13
+cons: 14
+int:9
+wis: 14
+cha:11
+cons: 14
+str: 17
+dex: 16
+cons: 9
+int:14
+wis: 11
+cha:10
+cons: 9
+str: 12
+dex: 8
+cons: 13
+int:12
+wis: 8
+cha:12
+cons: 13
+str: 14
+dex: 11
+cons: 10
+int:11
+wis: 13
+cha:14
+cons: 10
+str: 15
+dex: 16
+cons: 15
+int:10
+wis: 18
+cha:5
+cons: 15
+str: 13
+dex: 13
+cons: 10
+int:16
+wis: 15
+cha:6
+cons: 10
+str: 12
+dex: 15
+cons: 11
+int:16
+wis: 13
+cha:11
+cons: 11
+str: 15
+dex: 11
+cons: 9
+int:14
+wis: 10
+cha:15
+cons: 9
+str: 15
+dex: 11
+cons: 9
+int:11
+wis: 8
+cha:10
+cons: 9
+str: 15
+dex: 10
+cons: 15
+int:14
+wis: 7
+cha:17
+cons: 15
+str: 10
+dex: 11
+cons: 11
+int:12
+wis: 9
+cha:15
+cons: 11
+str: 11
+dex: 15
+cons: 16
+int:13
+wis: 13
+cha:9
+cons: 16
+str: 13
+dex: 7
+cons: 15
+int:16
+wis: 6
+cha:10
+cons: 15
+str: 12
+dex: 15
+cons: 12
+int:15
+wis: 16
+cha:13
+cons: 12
+str: 15
+dex: 14
+cons: 17
+int:16
+wis: 12
+cha:14
+cons: 17
+str: 11
+dex: 8
+cons: 8
+int:10
+wis: 7
+cha:8
+cons: 8
+str: 9
+dex: 13
+cons: 10
+int:10
+wis: 14
+cha:18
+cons: 10
+str: 14
+dex: 12
+cons: 11
+int:12
+wis: 12
+cha:12
+cons: 11
+str: 11
+dex: 10
+cons: 13
+int:12
+wis: 10
+cha:10
+cons: 13
+str: 15
+dex: 11
+cons: 11
+int:12
+wis: 14
+cha:14
+cons: 11
+str: 16
+dex: 12
+cons: 13
+int:10
+wis: 12
+cha:15
+cons: 13
+str: 11
+dex: 13
+cons: 15
+int:17
+wis: 8
+cha:14
+cons: 15
+str: 12
+dex: 9
+cons: 11
+int:12
+wis: 15
+cha:12
+cons: 11
+str: 16
+dex: 11
+cons: 15
+int:16
+wis: 8
+cha:16
+cons: 15
+str: 15
+dex: 13
+cons: 9
+int:14
+wis: 15
+cha:13
+cons: 9
+str: 15
+dex: 12
+cons: 14
+int:12
+wis: 16
+cha:12
+cons: 14
+str: 13
+dex: 11
+cons: 16
+int:13
+wis: 13
+cha:12
+cons: 16
+str: 17
+dex: 13
+cons: 8
+int:12
+wis: 10
+cha:13
+cons: 8
+str: 15
+dex: 10
+cons: 14
+int:7
+wis: 16
+cha:11
+cons: 14
+str: 11
+dex: 11
+cons: 16
+int:15
+wis: 16
+cha:10
+cons: 16
+str: 10
+dex: 12
+cons: 15
+int:14
+wis: 18
+cha:8
+cons: 15
+str: 14
+dex: 14
+cons: 13
+int:12
+wis: 13
+cha:12
+cons: 13
+str: 16
+dex: 13
+cons: 16
+int:11
+wis: 15
+cha:14
+cons: 16
+str: 13
+dex: 12
+cons: 11
+int:13
+wis: 13
+cha:8
+cons: 11
+str: 12
+dex: 13
+cons: 16
+int:14
+wis: 13
+cha:15
+cons: 16
+str: 13
+dex: 12
+cons: 11
+int:15
+wis: 11
+cha:13
+cons: 11
+str: 9
+dex: 11
+cons: 11
+int:12
+wis: 12
+cha:12
+cons: 11
+str: 16
+dex: 15
+cons: 13
+int:9
+wis: 14
+cha:13
+cons: 13
+str: 12
+dex: 16
+cons: 14
+int:6
+wis: 16
+cha:11
+cons: 14
+str: 15
+dex: 16
+cons: 11
+int:10
+wis: 10
+cha:13
+cons: 11
+str: 12
+dex: 10
+cons: 16
+int:9
+wis: 10
+cha:14
+cons: 16
+str: 14
+dex: 15
+cons: 14
+int:9
+wis: 12
+cha:15
+cons: 14
+str: 17
+dex: 9
+cons: 16
+int:17
+wis: 12
+cha:12
+cons: 16
+str: 12
+dex: 6
+cons: 12
+int:12
+wis: 10
+cha:15
+cons: 12
+str: 10
+dex: 9
+cons: 11
+int:9
+wis: 13
+cha:13
+cons: 11
+str: 10
+dex: 14
+cons: 10
+int:8
+wis: 13
+cha:15
+cons: 10
+str: 13
+dex: 13
+cons: 12
+int:11
+wis: 10
+cha:10
+cons: 12
+str: 14
+dex: 12
+cons: 18
+int:10
+wis: 8
+cha:15
+cons: 18
+str: 11
+dex: 14
+cons: 13
+int:14
+wis: 11
+cha:15
+cons: 13
+str: 14
+dex: 15
+cons: 11
+int:14
+wis: 16
+cha:13
+cons: 11
+str: 11
+dex: 5
+cons: 12
+int:16
+wis: 15
+cha:12
+cons: 12
+str: 16
+dex: 14
+cons: 11
+int:12
+wis: 10
+cha:10
+cons: 11
+str: 16
+dex: 13
+cons: 15
+int:16
+wis: 13
+cha:14
+cons: 15
+str: 11
+dex: 14
+cons: 13
+int:12
+wis: 10
+cha:11
+cons: 13
+str: 10
+dex: 18
+cons: 12
+int:15
+wis: 16
+cha:12
+cons: 12
+str: 12
+dex: 11
+cons: 13
+int:8
+wis: 7
+cha:14
+cons: 13
+str: 11
+dex: 12
+cons: 18
+int:13
+wis: 14
+cha:14
+cons: 18
+str: 13
+dex: 5
+cons: 9
+int:11
+wis: 14
+cha:11
+cons: 9
+str: 7
+dex: 10
+cons: 12
+int:13
+wis: 14
+cha:12
+cons: 12
+str: 15
+dex: 15
+cons: 14
+int:16
+wis: 14
+cha:13
+cons: 14
+str: 11
+dex: 13
+cons: 16
+int:15
+wis: 11
+cha:12
+cons: 16
+str: 13
+dex: 14
+cons: 15
+int:13
+wis: 12
+cha:13
+cons: 15
+str: 14
+dex: 10
+cons: 13
+int:8
+wis: 7
+cha:11
+cons: 13
+str: 7
+dex: 15
+cons: 14
+int:13
+wis: 13
+cha:13
+cons: 14
+str: 9
+dex: 13
+cons: 13
+int:4
+wis: 9
+cha:12
+cons: 13
+str: 13
+dex: 12
+cons: 6
+int:14
+wis: 13
+cha:12
+cons: 6
+str: 12
+dex: 14
+cons: 13
+int:12
+wis: 12
+cha:13
+cons: 13
+str: 13
+dex: 14
+cons: 11
+int:13
+wis: 12
+cha:15
+cons: 11
+str: 12
+dex: 16
+cons: 13
+int:11
+wis: 16
+cha:8
+cons: 13
+str: 9
+dex: 6
+cons: 16
+int:13
+wis: 11
+cha:16
+cons: 16
+str: 10
+dex: 11
+cons: 11
+int:13
+wis: 10
+cha:15
+cons: 11
+str: 13
+dex: 11
+cons: 10
+int:10
+wis: 12
+cha:12
+cons: 10
+str: 14
+dex: 16
+cons: 10
+int:12
+wis: 10
+cha:16
+cons: 10
+str: 11
+dex: 12
+cons: 10
+int:13
+wis: 17
+cha:13
+cons: 10
+str: 13
+dex: 13
+cons: 15
+int:16
+wis: 13
+cha:15
+cons: 15
+str: 11
+dex: 13
+cons: 14
+int:17
+wis: 17
+cha:12
+cons: 14
+str: 14
+dex: 11
+cons: 9
+int:17
+wis: 7
+cha:11
+cons: 9
+str: 12
+dex: 8
+cons: 9
+int:13
+wis: 5
+cha:11
+cons: 9
+str: 12
+dex: 15
+cons: 10
+int:9
+wis: 13
+cha:11
+cons: 10
+str: 11
+dex: 17
+cons: 15
+int:15
+wis: 15
+cha:13
+cons: 15
+str: 16
+dex: 6
+cons: 13
+int:14
+wis: 12
+cha:15
+cons: 13
+str: 11
+dex: 13
+cons: 12
+int:12
+wis: 12
+cha:14
+cons: 12
+str: 12
+dex: 15
+cons: 14
+int:16
+wis: 15
+cha:6
+cons: 14
+str: 15
+dex: 13
+cons: 5
+int:14
+wis: 14
+cha:11
+cons: 5
+str: 13
+dex: 16
+cons: 10
+int:7
+wis: 11
+cha:10
+cons: 10
+str: 13
+dex: 10
+cons: 14
+int:17
+wis: 15
+cha:10
+cons: 14
+str: 5
+dex: 14
+cons: 15
+int:17
+wis: 17
+cha:14
+cons: 15
+str: 14
+dex: 13
+cons: 14
+int:10
+wis: 13
+cha:14
+cons: 14
+str: 8
+dex: 14
+cons: 11
+int:10
+wis: 11
+cha:10
+cons: 11
+str: 16
+dex: 10
+cons: 12
+int:15
+wis: 11
+cha:13
+cons: 12
+str: 16
+dex: 14
+cons: 11
+int:11
+wis: 15
+cha:13
+cons: 11
+str: 7
+dex: 15
+cons: 14
+int:8
+wis: 10
+cha:13
+cons: 14
+str: 16
+dex: 12
+cons: 14
+int:15
+wis: 10
+cha:12
+cons: 14
+str: 11
+dex: 16
+cons: 14
+int:11
+wis: 11
+cha:13
+cons: 14
+str: 10
+dex: 11
+cons: 16
+int:13
+wis: 9
+cha:14
+cons: 16
+str: 15
+dex: 13
+cons: 10
+int:16
+wis: 6
+cha:12
+cons: 10
+str: 8
+dex: 13
+cons: 11
+int:14
+wis: 10
+cha:11
+cons: 11
+str: 13
+dex: 12
+cons: 16
+int:9
+wis: 8
+cha:12
+cons: 16
+str: 12
+dex: 15
+cons: 16
+int:17
+wis: 14
+cha:12
+cons: 16
+str: 16
+dex: 9
+cons: 7
+int:18
+wis: 10
+cha:7
+cons: 7
+str: 11
+dex: 9
+cons: 14
+int:9
+wis: 7
+cha:12
+cons: 14
+str: 11
+dex: 13
+cons: 13
+int:12
+wis: 12
+cha:17
+cons: 13
+str: 12
+dex: 12
+cons: 8
+int:14
+wis: 17
+cha:13
+cons: 8
+str: 11
+dex: 15
+cons: 13
+int:17
+wis: 15
+cha:9
+cons: 13
+str: 10
+dex: 16
+cons: 9
+int:10
+wis: 13
+cha:6
+cons: 9
+str: 10
+dex: 8
+cons: 11
+int:11
+wis: 9
+cha:9
+cons: 11
+str: 16
+dex: 12
+cons: 10
+int:10
+wis: 17
+cha:13
+cons: 10
+str: 14
+dex: 16
+cons: 14
+int:8
+wis: 14
+cha:11
+cons: 14
+str: 11
+dex: 16
+cons: 15
+int:15
+wis: 7
+cha:14
+cons: 15
+str: 18
+dex: 7
+cons: 14
+int:12
+wis: 12
+cha:12
+cons: 14
+str: 15
+dex: 7
+cons: 9
+int:11
+wis: 7
+cha:10
+cons: 9
+str: 12
+dex: 14
+cons: 14
+int:12
+wis: 12
+cha:9
+cons: 14
+str: 5
+dex: 11
+cons: 15
+int:13
+wis: 11
+cha:9
+cons: 15
+str: 13
+dex: 18
+cons: 9
+int:8
+wis: 12
+cha:12
+cons: 9
+str: 10
+dex: 13
+cons: 16
+int:12
+wis: 9
+cha:12
+cons: 16
+str: 17
+dex: 8
+cons: 12
+int:11
+wis: 6
+cha:13
+cons: 12
+str: 14
+dex: 6
+cons: 12
+int:8
+wis: 6
+cha:12
+cons: 12
+str: 13
+dex: 12
+cons: 7
+int:13
+wis: 10
+cha:11
+cons: 7
+str: 17
+dex: 15
+cons: 10
+int:7
+wis: 11
+cha:8
+cons: 10
+str: 13
+dex: 10
+cons: 12
+int:12
+wis: 10
+cha:10
+cons: 12
+str: 11
+dex: 11
+cons: 13
+int:12
+wis: 8
+cha:17
+cons: 13
+str: 12
+dex: 11
+cons: 11
+int:10
+wis: 9
+cha:12
+cons: 11
+str: 12
+dex: 12
+cons: 18
+int:14
+wis: 14
+cha:11
+cons: 18
+str: 15
+dex: 9
+cons: 15
+int:9
+wis: 16
+cha:14
+cons: 15
+str: 14
+dex: 14
+cons: 10
+int:14
+wis: 15
+cha:14
+cons: 10
+str: 15
+dex: 8
+cons: 14
+int:13
+wis: 9
+cha:12
+cons: 14
+str: 11
+dex: 14
+cons: 8
+int:11
+wis: 10
+cha:3
+cons: 8
+str: 12
+dex: 9
+cons: 15
+int:13
+wis: 5
+cha:13
+cons: 15
+str: 16
+dex: 11
+cons: 14
+int:16
+wis: 11
+cha:9
+cons: 14
+str: 8
+dex: 10
+cons: 6
+int:12
+wis: 11
+cha:15
+cons: 6
+str: 12
+dex: 11
+cons: 14
+int:16
+wis: 12
+cha:15
+cons: 14
+str: 12
+dex: 9
+cons: 13
+int:15
+wis: 14
+cha:14
+cons: 13
+str: 10
+dex: 7
+cons: 12
+int:11
+wis: 10
+cha:12
+cons: 12
+str: 15
+dex: 9
+cons: 11
+int:7
+wis: 9
+cha:8
+cons: 11
+str: 15
+dex: 15
+cons: 13
+int:14
+wis: 13
+cha:7
+cons: 13
+str: 14
+dex: 11
+cons: 11
+int:11
+wis: 13
+cha:14
+cons: 11
+str: 14
+dex: 15
+cons: 14
+int:14
+wis: 15
+cha:10
+cons: 14
+str: 14
+dex: 7
+cons: 16
+int:17
+wis: 11
+cha:12
+cons: 16
+str: 9
+dex: 15
+cons: 18
+int:10
+wis: 11
+cha:14
+cons: 18
+str: 8
+dex: 8
+cons: 10
+int:11
+wis: 13
+cha:12
+cons: 10
+str: 5
+dex: 13
+cons: 15
+int:10
+wis: 10
+cha:11
+cons: 15
+str: 16
+dex: 12
+cons: 10
+int:14
+wis: 11
+cha:11
+cons: 10
+str: 8
+dex: 11
+cons: 8
+int:13
+wis: 14
+cha:15
+cons: 8
+str: 7
+dex: 13
+cons: 13
+int:10
+wis: 14
+cha:16
+cons: 13
+str: 13
+dex: 14
+cons: 8
+int:11
+wis: 10
+cha:15
+cons: 8
+str: 14
+dex: 14
+cons: 10
+int:17
+wis: 15
+cha:10
+cons: 10
+str: 14
+dex: 11
+cons: 14
+int:11
+wis: 13
+cha:12
+cons: 14
+str: 14
+dex: 11
+cons: 9
+int:14
+wis: 9
+cha:11
+cons: 9
+str: 10
+dex: 14
+cons: 17
+int:14
+wis: 11
+cha:14
+cons: 17
+str: 7
+dex: 12
+cons: 14
+int:14
+wis: 11
+cha:12
+cons: 14
+str: 12
+dex: 15
+cons: 12
+int:15
+wis: 10
+cha:14
+cons: 12
+str: 14
+dex: 12
+cons: 9
+int:11
+wis: 6
+cha:15
+cons: 9
+str: 16
+dex: 13
+cons: 8
+int:11
+wis: 16
+cha:14
+cons: 8
+str: 14
+dex: 12
+cons: 17
+int:16
+wis: 10
+cha:11
+cons: 17
+str: 17
+dex: 14
+cons: 17
+int:7
+wis: 13
+cha:7
+cons: 17
+str: 15
+dex: 11
+cons: 11
+int:12
+wis: 12
+cha:12
+cons: 11
+str: 15
+dex: 15
+cons: 12
+int:10
+wis: 15
+cha:14
+cons: 12
+str: 13
+dex: 12
+cons: 9
+int:15
+wis: 14
+cha:12
+cons: 9
+str: 13
+dex: 13
+cons: 8
+int:18
+wis: 10
+cha:17
+cons: 8
+str: 17
+dex: 11
+cons: 13
+int:13
+wis: 13
+cha:10
+cons: 13
+str: 14
+dex: 11
+cons: 12
+int:11
+wis: 13
+cha:14
+cons: 12
+str: 8
+dex: 18
+cons: 11
+int:9
+wis: 11
+cha:7
+cons: 11
+str: 8
+dex: 5
+cons: 13
+int:15
+wis: 9
+cha:11
+cons: 13
+str: 15
+dex: 13
+cons: 15
+int:11
+wis: 12
+cha:13
+cons: 15
+str: 13
+dex: 11
+cons: 13
+int:11
+wis: 15
+cha:15
+cons: 13
+str: 8
+dex: 10
+cons: 17
+int:13
+wis: 11
+cha:11
+cons: 17
+str: 13
+dex: 10
+cons: 14
+int:9
+wis: 11
+cha:18
+cons: 14
+str: 12
+dex: 13
+cons: 10
+int:11
+wis: 12
+cha:7
+cons: 10
+str: 17
+dex: 8
+cons: 12
+int:13
+wis: 14
+cha:12
+cons: 12
+str: 10
+dex: 18
+cons: 9
+int:15
+wis: 14
+cha:13
+cons: 9
+str: 11
+dex: 12
+cons: 10
+int:7
+wis: 12
+cha:9
+cons: 10
+str: 9
+dex: 10
+cons: 9
+int:7
+wis: 13
+cha:10
+cons: 9
+str: 10
+dex: 13
+cons: 18
+int:13
+wis: 13
+cha:13
+cons: 18
+str: 16
+dex: 12
+cons: 13
+int:11
+wis: 18
+cha:16
+cons: 13
+str: 13
+dex: 5
+cons: 13
+int:9
+wis: 13
+cha:13
+cons: 13
+str: 16
+dex: 16
+cons: 15
+int:12
+wis: 13
+cha:10
+cons: 15
+str: 11
+dex: 14
+cons: 11
+int:16
+wis: 12
+cha:4
+cons: 11
+str: 8
+dex: 11
+cons: 15
+int:14
+wis: 14
+cha:16
+cons: 15
+str: 11
+dex: 14
+cons: 11
+int:12
+wis: 13
+cha:11
+cons: 11
+str: 9
+dex: 13
+cons: 14
+int:10
+wis: 12
+cha:14
+cons: 14
+str: 12
+dex: 6
+cons: 8
+int:8
+wis: 14
+cha:12
+cons: 8
+str: 6
+dex: 10
+cons: 9
+int:11
+wis: 14
+cha:11
+cons: 9
+str: 11
+dex: 4
+cons: 13
+int:15
+wis: 12
+cha:12
+cons: 13
+str: 14
+dex: 17
+cons: 11
+int:10
+wis: 8
+cha:12
+cons: 11
+str: 12
+dex: 14
+cons: 11
+int:11
+wis: 11
+cha:10
+cons: 11
+str: 15
+dex: 12
+cons: 10
+int:13
+wis: 17
+cha:15
+cons: 10
+str: 13
+dex: 10
+cons: 15
+int:15
+wis: 16
+cha:9
+cons: 15
+str: 12
+dex: 10
+cons: 10
+int:16
+wis: 14
+cha:14
+cons: 10
+str: 8
+dex: 8
+cons: 14
+int:14
+wis: 13
+cha:10
+cons: 14
+str: 16
+dex: 11
+cons: 15
+int:12
+wis: 16
+cha:11
+cons: 15
+str: 4
+dex: 11
+cons: 9
+int:13
+wis: 14
+cha:15
+cons: 9
+str: 7
+dex: 14
+cons: 6
+int:13
+wis: 12
+cha:13
+cons: 6
+str: 8
+dex: 11
+cons: 17
+int:15
+wis: 10
+cha:14
+cons: 17
+str: 14
+dex: 12
+cons: 14
+int:12
+wis: 12
+cha:17
+cons: 14
+str: 10
+dex: 12
+cons: 15
+int:12
+wis: 12
+cha:11
+cons: 15
+str: 11
+dex: 12
+cons: 12
+int:16
+wis: 10
+cha:9
+cons: 12
+str: 13
+dex: 8
+cons: 12
+int:9
+wis: 10
+cha:14
+cons: 12
+str: 15
+dex: 16
+cons: 14
+int:14
+wis: 13
+cha:13
+cons: 14
+str: 9
+dex: 9
+cons: 13
+int:16
+wis: 11
+cha:14
+cons: 13
+str: 11
+dex: 15
+cons: 13
+int:10
+wis: 10
+cha:14
+cons: 13
+str: 9
+dex: 15
+cons: 16
+int:10
+wis: 14
+cha:8
+cons: 16
+str: 17
+dex: 8
+cons: 10
+int:14
+wis: 10
+cha:16
+cons: 10
+str: 6
+dex: 12
+cons: 16
+int:12
+wis: 13
+cha:9
+cons: 16
+str: 12
+dex: 12
+cons: 14
+int:16
+wis: 13
+cha:14
+cons: 14
+str: 15
+dex: 13
+cons: 13
+int:13
+wis: 13
+cha:12
+cons: 13
+str: 12
+dex: 11
+cons: 13
+int:9
+wis: 12
+cha:14
+cons: 13
+str: 17
+dex: 14
+cons: 16
+int:15
+wis: 15
+cha:11
+cons: 16
+str: 17
+dex: 11
+cons: 12
+int:12
+wis: 12
+cha:11
+cons: 12
+str: 10
+dex: 17
+cons: 15
+int:14
+wis: 12
+cha:14
+cons: 15
+str: 11
+dex: 13
+cons: 15
+int:13
+wis: 11
+cha:12
+cons: 15
+str: 16
+dex: 15
+cons: 17
+int:15
+wis: 13
+cha:11
+cons: 17
+str: 14
+dex: 11
+cons: 6
+int:9
+wis: 9
+cha:10
+cons: 6
+str: 13
+dex: 17
+cons: 6
+int:10
+wis: 11
+cha:13
+cons: 6
+str: 8
+dex: 10
+cons: 14
+int:12
+wis: 11
+cha:17
+cons: 14
+str: 9
+dex: 18
+cons: 12
+int:8
+wis: 8
+cha:13
+cons: 12
+str: 16
+dex: 11
+cons: 13
+int:15
+wis: 8
+cha:11
+cons: 13
+str: 7
+dex: 12
+cons: 12
+int:12
+wis: 12
+cha:12
+cons: 12
+str: 13
+dex: 12
+cons: 12
+int:16
+wis: 14
+cha:14
+cons: 12
+str: 7
+dex: 16
+cons: 18
+int:11
+wis: 11
+cha:14
+cons: 18
+str: 16
+dex: 17
+cons: 14
+int:13
+wis: 8
+cha:12
+cons: 14
+str: 13
+dex: 11
+cons: 10
+int:14
+wis: 15
+cha:6
+cons: 10
+str: 11
+dex: 17
+cons: 9
+int:9
+wis: 18
+cha:11
+cons: 9
+str: 17
+dex: 17
+cons: 11
+int:10
+wis: 12
+cha:13
+cons: 11
+str: 13
+dex: 8
+cons: 14
+int:11
+wis: 11
+cha:13
+cons: 14
+str: 12
+dex: 7
+cons: 12
+int:8
+wis: 14
+cha:11
+cons: 12
+str: 18
+dex: 15
+cons: 11
+int:11
+wis: 15
+cha:13
+cons: 11
+str: 10
+dex: 15
+cons: 13
+int:16
+wis: 10
+cha:11
+cons: 13
+str: 14
+dex: 13
+cons: 11
+int:11
+wis: 14
+cha:8
+cons: 11
+str: 13
+dex: 13
+cons: 12
+int:15
+wis: 10
+cha:14
+cons: 12
+str: 17
+dex: 13
+cons: 16
+int:10
+wis: 11
+cha:15
+cons: 16
+str: 13
+dex: 9
+cons: 14
+int:15
+wis: 13
+cha:16
+cons: 14
+str: 8
+dex: 14
+cons: 15
+int:17
+wis: 9
+cha:15
+cons: 15
+str: 15
+dex: 14
+cons: 13
+int:9
+wis: 16
+cha:14
+cons: 13
+str: 14
+dex: 8
+cons: 7
+int:13
+wis: 12
+cha:10
+cons: 7
+str: 15
+dex: 13
+cons: 13
+int:13
+wis: 11
+cha:13
+cons: 13
+str: 7
+dex: 13
+cons: 18
+int:11
+wis: 8
+cha:12
+cons: 18
+str: 8
+dex: 14
+cons: 11
+int:11
+wis: 13
+cha:15
+cons: 11
+str: 10
+dex: 14
+cons: 8
+int:13
+wis: 10
+cha:14
+cons: 8
+str: 16
+dex: 10
+cons: 14
+int:13
+wis: 12
+cha:13
+cons: 14
+str: 15
+dex: 9
+cons: 9
+int:12
+wis: 11
+cha:12
+cons: 9
+str: 12
+dex: 11
+cons: 13
+int:14
+wis: 12
+cha:10
+cons: 13
+str: 12
+dex: 7
+cons: 5
+int:12
+wis: 15
+cha:6
+cons: 5
+str: 15
+dex: 13
+cons: 17
+int:13
+wis: 15
+cha:13
+cons: 17
+str: 17
+dex: 12
+cons: 18
+int:14
+wis: 14
+cha:14
+cons: 18
+str: 15
+dex: 10
+cons: 8
+int:14
+wis: 11
+cha:17
+cons: 8
+str: 15
+dex: 16
+cons: 9
+int:12
+wis: 16
+cha:7
+cons: 9
+str: 12
+dex: 13
+cons: 9
+int:17
+wis: 8
+cha:15
+cons: 9
+str: 12
+dex: 10
+cons: 9
+int:8
+wis: 13
+cha:13
+cons: 9
+str: 15
+dex: 15
+cons: 15
+int:10
+wis: 12
+cha:16
+cons: 15
+str: 14
+dex: 13
+cons: 15
+int:15
+wis: 15
+cha:10
+cons: 15
+str: 14
+dex: 8
+cons: 15
+int:11
+wis: 13
+cha:7
+cons: 15
+str: 10
+dex: 14
+cons: 14
+int:13
+wis: 15
+cha:13
+cons: 14
+str: 16
+dex: 6
+cons: 6
+int:12
+wis: 14
+cha:10
+cons: 6
+str: 17
+dex: 10
+cons: 9
+int:16
+wis: 14
+cha:8
+cons: 9
+str: 13
+dex: 8
+cons: 5
+int:10
+wis: 10
+cha:11
+cons: 5
+str: 11
+dex: 13
+cons: 13
+int:14
+wis: 18
+cha:11
+cons: 13
+str: 10
+dex: 18
+cons: 13
+int:8
+wis: 5
+cha:12
+cons: 13
+str: 16
+dex: 10
+cons: 6
+int:14
+wis: 9
+cha:10
+cons: 6
+str: 7
+dex: 9
+cons: 15
+int:17
+wis: 15
+cha:12
+cons: 15
+str: 16
+dex: 15
+cons: 14
+int:9
+wis: 9
+cha:13
+cons: 14
+str: 10
+dex: 14
+cons: 12
+int:11
+wis: 14
+cha:12
+cons: 12
+str: 8
+dex: 14
+cons: 6
+int:17
+wis: 9
+cha:15
+cons: 6
+str: 7
+dex: 13
+cons: 12
+int:13
+wis: 11
+cha:11
+cons: 12
+str: 15
+dex: 15
+cons: 7
+int:13
+wis: 9
+cha:14
+cons: 7
+str: 15
+dex: 16
+cons: 16
+int:15
+wis: 16
+cha:16
+cons: 16
+str: 14
+dex: 13
+cons: 17
+int:12
+wis: 11
+cha:14
+cons: 17
+str: 16
+dex: 7
+cons: 13
+int:14
+wis: 14
+cha:7
+cons: 13
+str: 9
+dex: 16
+cons: 9
+int:7
+wis: 14
+cha:11
+cons: 9
+str: 11
+dex: 9
+cons: 15
+int:9
+wis: 16
+cha:17
+cons: 15
+str: 12
+dex: 13
+cons: 6
+int:16
+wis: 7
+cha:15
+cons: 6
+str: 5
+dex: 15
+cons: 12
+int:10
+wis: 17
+cha:10
+cons: 12
+str: 9
+dex: 13
+cons: 11
+int:16
+wis: 13
+cha:14
+cons: 11
+str: 13
+dex: 12
+cons: 11
+int:14
+wis: 11
+cha:11
+cons: 11
+str: 13
+dex: 13
+cons: 15
+int:12
+wis: 17
+cha:12
+cons: 15
+str: 11
+dex: 11
+cons: 11
+int:9
+wis: 9
+cha:14
+cons: 11
+str: 11
+dex: 10
+cons: 6
+int:9
+wis: 16
+cha:14
+cons: 6
+str: 15
+dex: 11
+cons: 9
+int:12
+wis: 16
+cha:10
+cons: 9
+str: 12
+dex: 10
+cons: 16
+int:9
+wis: 16
+cha:16
+cons: 16
+str: 14
+dex: 12
+cons: 15
+int:15
+wis: 9
+cha:8
+cons: 15
+str: 11
+dex: 11
+cons: 13
+int:11
+wis: 13
+cha:13
+cons: 13
+str: 13
+dex: 13
+cons: 14
+int:11
+wis: 11
+cha:15
+cons: 14
+str: 12
+dex: 18
+cons: 14
+int:14
+wis: 12
+cha:13
+cons: 14
+str: 11
+dex: 13
+cons: 15
+int:16
+wis: 10
+cha:14
+cons: 15
+str: 7
+dex: 12
+cons: 17
+int:11
+wis: 13
+cha:13
+cons: 17
+str: 12
+dex: 13
+cons: 17
+int:13
+wis: 11
+cha:18
+cons: 17
+str: 10
+dex: 15
+cons: 17
+int:13
+wis: 7
+cha:15
+cons: 17
+str: 13
+dex: 14
+cons: 16
+int:11
+wis: 7
+cha:6
+cons: 16
+str: 12
+dex: 15
+cons: 9
+int:10
+wis: 13
+cha:15
+cons: 9
+str: 15
+dex: 17
+cons: 10
+int:14
+wis: 13
+cha:10
+cons: 10
+str: 10
+dex: 9
+cons: 10
+int:13
+wis: 10
+cha:14
+cons: 10
+str: 11
+dex: 11
+cons: 9
+int:16
+wis: 7
+cha:12
+cons: 9
+str: 14
+dex: 13
+cons: 15
+int:9
+wis: 13
+cha:12
+cons: 15
+str: 14
+dex: 11
+cons: 11
+int:14
+wis: 9
+cha:16
+cons: 11
+str: 11
+dex: 10
+cons: 10
+int:12
+wis: 17
+cha:12
+cons: 10
+str: 8
+dex: 10
+cons: 8
+int:14
+wis: 12
+cha:16
+cons: 8
+str: 14
+dex: 15
+cons: 13
+int:10
+wis: 15
+cha:8
+cons: 13
+str: 7
+dex: 12
+cons: 7
+int:7
+wis: 14
+cha:12
+cons: 7
+str: 11
+dex: 15
+cons: 15
+int:11
+wis: 9
+cha:10
+cons: 15
+str: 15
+dex: 11
+cons: 13
+int:13
+wis: 14
+cha:12
+cons: 13
+str: 14
+dex: 13
+cons: 16
+int:11
+wis: 10
+cha:11
+cons: 16
+str: 13
+dex: 9
+cons: 9
+int:13
+wis: 18
+cha:11
+cons: 9
+str: 5
+dex: 13
+cons: 17
+int:13
+wis: 5
+cha:17
+cons: 17
+str: 15
+dex: 8
+cons: 9
+int:15
+wis: 13
+cha:13
+cons: 9
+str: 11
+dex: 11
+cons: 14
+int:10
+wis: 11
+cha:9
+cons: 14
+str: 15
+dex: 10
+cons: 16
+int:10
+wis: 10
+cha:13
+cons: 16
+str: 9
+dex: 15
+cons: 13
+int:12
+wis: 10
+cha:18
+cons: 13
+str: 14
+dex: 15
+cons: 11
+int:9
+wis: 14
+cha:8
+cons: 11
+str: 13
+dex: 14
+cons: 14
+int:12
+wis: 9
+cha:11
+cons: 14
+str: 13
+dex: 16
+cons: 12
+int:5
+wis: 18
+cha:8
+cons: 12
+str: 9
+dex: 16
+cons: 15
+int:5
+wis: 17
+cha:16
+cons: 15
+str: 9
+dex: 15
+cons: 17
+int:10
+wis: 14
+cha:17
+cons: 17
+str: 12
+dex: 10
+cons: 11
+int:15
+wis: 11
+cha:16
+cons: 11
+str: 13
+dex: 10
+cons: 14
+int:12
+wis: 8
+cha:10
+cons: 14
+str: 13
+dex: 12
+cons: 10
+int:11
+wis: 10
+cha:15
+cons: 10
+str: 12
+dex: 11
+cons: 13
+int:8
+wis: 12
+cha:14
+cons: 13
+str: 7
+dex: 9
+cons: 11
+int:13
+wis: 5
+cha:18
+cons: 11
+str: 15
+dex: 15
+cons: 6
+int:9
+wis: 16
+cha:8
+cons: 6
+str: 14
+dex: 9
+cons: 16
+int:16
+wis: 10
+cha:16
+cons: 16
+str: 15
+dex: 13
+cons: 11
+int:10
+wis: 13
+cha:8
+cons: 11
+str: 9
+dex: 17
+cons: 16
+int:5
+wis: 14
+cha:14
+cons: 16
+str: 14
+dex: 15
+cons: 12
+int:15
+wis: 12
+cha:14
+cons: 12
+str: 12
+dex: 11
+cons: 16
+int:10
+wis: 12
+cha:13
+cons: 16
+str: 9
+dex: 10
+cons: 12
+int:9
+wis: 8
+cha:15
+cons: 12
+str: 13
+dex: 7
+cons: 10
+int:7
+wis: 16
+cha:10
+cons: 10
+str: 12
+dex: 14
+cons: 12
+int:15
+wis: 10
+cha:12
+cons: 12
+str: 14
+dex: 17
+cons: 14
+int:12
+wis: 14
+cha:11
+cons: 14
+str: 16
+dex: 11
+cons: 11
+int:10
+wis: 17
+cha:13
+cons: 11
+str: 15
+dex: 10
+cons: 15
+int:7
+wis: 17
+cha:17
+cons: 15
+str: 15
+dex: 10
+cons: 10
+int:15
+wis: 10
+cha:14
+cons: 10
+str: 16
+dex: 17
+cons: 12
+int:14
+wis: 14
+cha:14
+cons: 12
+str: 9
+dex: 17
+cons: 11
+int:8
+wis: 12
+cha:15
+cons: 11
+str: 7
+dex: 14
+cons: 8
+int:14
+wis: 10
+cha:9
+cons: 8
+str: 12
+dex: 16
+cons: 12
+int:11
+wis: 11
+cha:11
+cons: 12
+str: 14
+dex: 12
+cons: 13
+int:12
+wis: 13
+cha:10
+cons: 13
+str: 16
+dex: 13
+cons: 11
+int:14
+wis: 8
+cha:10
+cons: 11
+str: 10
+dex: 6
+cons: 13
+int:14
+wis: 9
+cha:14
+cons: 13
+str: 10
+dex: 10
+cons: 17
+int:10
+wis: 6
+cha:13
+cons: 17
+str: 9
+dex: 12
+cons: 9
+int:9
+wis: 15
+cha:10
+cons: 9
+str: 16
+dex: 9
+cons: 7
+int:14
+wis: 7
+cha:12
+cons: 7
+str: 15
+dex: 14
+cons: 13
+int:11
+wis: 15
+cha:15
+cons: 13
+str: 14
+dex: 6
+cons: 12
+int:15
+wis: 14
+cha:15
+cons: 12
+str: 15
+dex: 18
+cons: 13
+int:15
+wis: 9
+cha:8
+cons: 13
+str: 12
+dex: 14
+cons: 15
+int:12
+wis: 13
+cha:13
+cons: 15
+str: 7
+dex: 13
+cons: 13
+int:16
+wis: 10
+cha:12
+cons: 13
+str: 14
+dex: 12
+cons: 10
+int:12
+wis: 14
+cha:17
+cons: 10
+str: 7
+dex: 12
+cons: 17
+int:9
+wis: 12
+cha:12
+cons: 17
+str: 9
+dex: 13
+cons: 13
+int:11
+wis: 9
+cha:17
+cons: 13
+str: 14
+dex: 11
+cons: 9
+int:12
+wis: 13
+cha:10
+cons: 9
+str: 15
+dex: 14
+cons: 15
+int:9
+wis: 12
+cha:14
+cons: 15
+str: 16
+dex: 16
+cons: 10
+int:14
+wis: 11
+cha:7
+cons: 10
+str: 14
+dex: 9
+cons: 10
+int:11
+wis: 12
+cha:11
+cons: 10
+str: 7
+dex: 9
+cons: 14
+int:9
+wis: 11
+cha:15
+cons: 14
+str: 6
+dex: 15
+cons: 17
+int:12
+wis: 15
+cha:11
+cons: 17
+str: 8
+dex: 15
+cons: 14
+int:13
+wis: 16
+cha:17
+cons: 14
+str: 17
+dex: 14
+cons: 12
+int:9
+wis: 12
+cha:13
+cons: 12
+str: 11
+dex: 14
+cons: 14
+int:14
+wis: 16
+cha:14
+cons: 14
+str: 13
+dex: 14
+cons: 17
+int:12
+wis: 16
+cha:10
+cons: 17
+str: 12
+dex: 16
+cons: 12
+int:13
+wis: 10
+cha:16
+cons: 12
+str: 12
+dex: 14
+cons: 13
+int:12
+wis: 16
+cha:12
+cons: 13
+str: 8
+dex: 10
+cons: 12
+int:15
+wis: 13
+cha:8
+cons: 12
+str: 17
+dex: 14
+cons: 8
+int:12
+wis: 14
+cha:15
+cons: 8
+str: 14
+dex: 14
+cons: 4
+int:13
+wis: 14
+cha:10
+cons: 4
+str: 14
+dex: 7
+cons: 15
+int:11
+wis: 8
+cha:11
+cons: 15
+str: 14
+dex: 12
+cons: 13
+int:12
+wis: 10
+cha:14
+cons: 13
+str: 9
+dex: 13
+cons: 16
+int:15
+wis: 10
+cha:14
+cons: 16
+str: 12
+dex: 13
+cons: 10
+int:14
+wis: 14
+cha:10
+cons: 10
+str: 11
+dex: 12
+cons: 10
+int:15
+wis: 17
+cha:9
+cons: 10
+str: 13
+dex: 8
+cons: 11
+int:16
+wis: 7
+cha:9
+cons: 11
+str: 9
+dex: 12
+cons: 14
+int:7
+wis: 15
+cha:12
+cons: 14
+str: 15
+dex: 13
+cons: 15
+int:11
+wis: 13
+cha:12
+cons: 15
+str: 12
+dex: 6
+cons: 13
+int:12
+wis: 9
+cha:13
+cons: 13
+str: 10
+dex: 11
+cons: 17
+int:9
+wis: 12
+cha:15
+cons: 17
+str: 14
+dex: 13
+cons: 12
+int:5
+wis: 12
+cha:15
+cons: 12
+str: 16
+dex: 11
+cons: 18
+int:16
+wis: 9
+cha:14
+cons: 18
+str: 10
+dex: 6
+cons: 8
+int:17
+wis: 14
+cha:10
+cons: 8
+str: 15
+dex: 14
+cons: 10
+int:11
+wis: 15
+cha:9
+cons: 10
+str: 10
+dex: 9
+cons: 9
+int:12
+wis: 11
+cha:10
+cons: 9
+str: 13
+dex: 8
+cons: 12
+int:17
+wis: 11
+cha:14
+cons: 12
+str: 9
+dex: 12
+cons: 15
+int:5
+wis: 14
+cha:18
+cons: 15
+str: 15
+dex: 12
+cons: 12
+int:9
+wis: 10
+cha:14
+cons: 12
+str: 12
+dex: 10
+cons: 12
+int:13
+wis: 12
+cha:13
+cons: 12
+str: 7
+dex: 18
+cons: 13
+int:13
+wis: 14
+cha:9
+cons: 13
+str: 9
+dex: 9
+cons: 10
+int:9
+wis: 8
+cha:10
+cons: 10
+str: 18
+dex: 16
+cons: 11
+int:10
+wis: 13
+cha:10
+cons: 11
+str: 12
+dex: 10
+cons: 14
+int:11
+wis: 14
+cha:11
+cons: 14
+str: 13
+dex: 12
+cons: 14
+int:13
+wis: 16
+cha:10
+cons: 14
+str: 9
+dex: 9
+cons: 10
+int:14
+wis: 13
+cha:8
+cons: 10
+str: 9
+dex: 14
+cons: 12
+int:16
+wis: 9
+cha:9
+cons: 12
+str: 12
+dex: 12
+cons: 11
+int:10
+wis: 12
+cha:9
+cons: 11
+str: 11
+dex: 16
+cons: 16
+int:11
+wis: 14
+cha:16
+cons: 16
+str: 15
+dex: 13
+cons: 12
+int:10
+wis: 8
+cha:16
+cons: 12
+str: 18
+dex: 11
+cons: 8
+int:17
+wis: 13
+cha:14
+cons: 8
+str: 11
+dex: 15
+cons: 14
+int:16
+wis: 16
+cha:17
+cons: 14
+str: 15
+dex: 15
+cons: 15
+int:10
+wis: 14
+cha:11
+cons: 15
+str: 13
+dex: 14
+cons: 17
+int:9
+wis: 5
+cha:5
+cons: 17
+str: 18
+dex: 10
+cons: 11
+int:17
+wis: 14
+cha:13
+cons: 11
+str: 14
+dex: 13
+cons: 12
+int:18
+wis: 10
+cha:14
+cons: 12
+str: 15
+dex: 10
+cons: 15
+int:15
+wis: 12
+cha:16
+cons: 15
+str: 9
+dex: 12
+cons: 16
+int:9
+wis: 10
+cha:18
+cons: 16
+str: 13
+dex: 13
+cons: 10
+int:14
+wis: 15
+cha:11
+cons: 10
+str: 14
+dex: 13
+cons: 8
+int:13
+wis: 12
+cha:8
+cons: 8
+str: 16
+dex: 14
+cons: 14
+int:13
+wis: 17
+cha:12
+cons: 14
+str: 7
+dex: 8
+cons: 13
+int:13
+wis: 16
+cha:11
+cons: 13
+str: 16
+dex: 11
+cons: 9
+int:5
+wis: 14
+cha:11
+cons: 9
+str: 13
+dex: 14
+cons: 11
+int:14
+wis: 16
+cha:13
+cons: 11
+str: 15
+dex: 14
+cons: 8
+int:13
+wis: 12
+cha:14
+cons: 8
+str: 11
+dex: 14
+cons: 16
+int:16
+wis: 11
+cha:12
+cons: 16
+str: 13
+dex: 11
+cons: 11
+int:11
+wis: 13
+cha:11
+cons: 11
+str: 10
+dex: 12
+cons: 11
+int:13
+wis: 10
+cha:13
+cons: 11
+str: 11
+dex: 15
+cons: 8
+int:11
+wis: 16
+cha:10
+cons: 8
+str: 15
+dex: 14
+cons: 10
+int:15
+wis: 14
+cha:10
+cons: 10
+str: 15
+dex: 13
+cons: 12
+int:13
+wis: 10
+cha:15
+cons: 12
+str: 16
+dex: 13
+cons: 7
+int:9
+wis: 12
+cha:14
+cons: 7
+str: 12
+dex: 10
+cons: 7
+int:16
+wis: 17
+cha:11
+cons: 7
+str: 14
+dex: 16
+cons: 14
+int:12
+wis: 10
+cha:16
+cons: 14
+str: 12
+dex: 13
+cons: 8
+int:13
+wis: 7
+cha:15
+cons: 8
+str: 17
+dex: 13
+cons: 12
+int:15
+wis: 11
+cha:13
+cons: 12
+str: 9
+dex: 12
+cons: 10
+int:14
+wis: 11
+cha:16
+cons: 10
+str: 7
+dex: 10
+cons: 9
+int:8
+wis: 13
+cha:16
+cons: 9
+str: 7
+dex: 8
+cons: 13
+int:6
+wis: 16
+cha:9
+cons: 13
+str: 15
+dex: 10
+cons: 12
+int:12
+wis: 8
+cha:13
+cons: 12
+str: 13
+dex: 11
+cons: 15
+int:15
+wis: 4
+cha:16
+cons: 15
+str: 5
+dex: 11
+cons: 13
+int:14
+wis: 15
+cha:13
+cons: 13
+str: 10
+dex: 14
+cons: 10
+int:15
+wis: 10
+cha:14
+cons: 10
+str: 10
+dex: 10
+cons: 10
+int:8
+wis: 14
+cha:14
+cons: 10
+str: 11
+dex: 12
+cons: 14
+int:10
+wis: 14
+cha:10
+cons: 14
+str: 17
+dex: 12
+cons: 13
+int:12
+wis: 15
+cha:11
+cons: 13
+str: 16
+dex: 14
+cons: 7
+int:11
+wis: 8
+cha:13
+cons: 7
+str: 11
+dex: 13
+cons: 14
+int:15
+wis: 5
+cha:15
+cons: 14
+str: 16
+dex: 12
+cons: 14
+int:16
+wis: 16
+cha:15
+cons: 14
+str: 13
+dex: 7
+cons: 15
+int:10
+wis: 12
+cha:13
+cons: 15
+str: 14
+dex: 15
+cons: 11
+int:13
+wis: 13
+cha:15
+cons: 11
+str: 11
+dex: 7
+cons: 12
+int:11
+wis: 13
+cha:15
+cons: 12
+str: 11
+dex: 14
+cons: 10
+int:9
+wis: 15
+cha:8
+cons: 10
+str: 17
+dex: 10
+cons: 12
+int:10
+wis: 15
+cha:8
+cons: 12
+str: 14
+dex: 12
+cons: 12
+int:13
+wis: 7
+cha:9
+cons: 12
+str: 17
+dex: 18
+cons: 8
+int:12
+wis: 15
+cha:10
+cons: 8
+str: 14
+dex: 13
+cons: 16
+int:9
+wis: 12
+cha:9
+cons: 16
+str: 16
+dex: 13
+cons: 15
+int:13
+wis: 14
+cha:13
+cons: 15
+str: 9
+dex: 17
+cons: 10
+int:16
+wis: 11
+cha:15
+cons: 10
+str: 15
+dex: 12
+cons: 14
+int:15
+wis: 10
+cha:11
+cons: 14
+str: 15
+dex: 13
+cons: 14
+int:14
+wis: 9
+cha:10
+cons: 14
+str: 14
+dex: 11
+cons: 17
+int:14
+wis: 17
+cha:14
+cons: 17
+str: 10
+dex: 15
+cons: 14
+int:10
+wis: 9
+cha:10
+cons: 14
+str: 16
+dex: 9
+cons: 11
+int:10
+wis: 12
+cha:6
+cons: 11
+str: 9
+dex: 10
+cons: 8
+int:16
+wis: 15
+cha:12
+cons: 8
+str: 11
+dex: 14
+cons: 14
+int:6
+wis: 9
+cha:18
+cons: 14
+str: 17
+dex: 12
+cons: 17
+int:15
+wis: 11
+cha:13
+cons: 17
+str: 9
+dex: 17
+cons: 13
+int:13
+wis: 12
+cha:16
+cons: 13
+str: 15
+dex: 12
+cons: 13
+int:10
+wis: 16
+cha:12
+cons: 13
+str: 12
+dex: 9
+cons: 9
+int:10
+wis: 13
+cha:15
+cons: 9
+str: 12
+dex: 11
+cons: 15
+int:13
+wis: 15
+cha:12
+cons: 15
+str: 13
+dex: 9
+cons: 13
+int:17
+wis: 11
+cha:11
+cons: 13
+str: 14
+dex: 9
+cons: 13
+int:17
+wis: 16
+cha:13
+cons: 13
+str: 11
+dex: 9
+cons: 17
+int:12
+wis: 15
+cha:17
+cons: 17
+str: 12
+dex: 14
+cons: 12
+int:8
+wis: 8
+cha:11
+cons: 12
+str: 11
+dex: 15
+cons: 15
+int:15
+wis: 12
+cha:11
+cons: 15
+str: 8
+dex: 11
+cons: 14
+int:6
+wis: 10
+cha:9
+cons: 14
+str: 16
+dex: 16
+cons: 13
+int:15
+wis: 10
+cha:13
+cons: 13
+str: 16
+dex: 8
+cons: 13
+int:7
+wis: 13
+cha:14
+cons: 13
+str: 10
+dex: 6
+cons: 13
+int:16
+wis: 14
+cha:13
+cons: 13
+str: 11
+dex: 14
+cons: 16
+int:12
+wis: 16
+cha:16
+cons: 16
+str: 13
+dex: 16
+cons: 11
+int:14
+wis: 17
+cha:13
+cons: 11
+str: 13
+dex: 14
+cons: 15
+int:13
+wis: 12
+cha:14
+cons: 15
+str: 12
+dex: 13
+cons: 11
+int:11
+wis: 11
+cha:16
+cons: 11
+str: 12
+dex: 11
+cons: 16
+int:15
+wis: 12
+cha:10
+cons: 16
+str: 16
+dex: 16
+cons: 13
+int:8
+wis: 16
+cha:15
+cons: 13
+str: 12
+dex: 10
+cons: 10
+int:12
+wis: 15
+cha:11
+cons: 10
+str: 12
+dex: 14
+cons: 16
+int:12
+wis: 11
+cha:16
+cons: 16
+str: 14
+dex: 9
+cons: 8
+int:8
+wis: 13
+cha:11
+cons: 8
+str: 5
+dex: 5
+cons: 16
+int:16
+wis: 12
+cha:5
+cons: 16
+str: 13
+dex: 13
+cons: 17
+int:11
+wis: 8
+cha:13
+cons: 17
+str: 7
+dex: 15
+cons: 14
+int:10
+wis: 13
+cha:13
+cons: 14
+str: 12
+dex: 14
+cons: 10
+int:12
+wis: 15
+cha:10
+cons: 10
+str: 11
+dex: 10
+cons: 10
+int:15
+wis: 16
+cha:15
+cons: 10
+str: 13
+dex: 15
+cons: 13
+int:15
+wis: 15
+cha:9
+cons: 13
+str: 17
+dex: 10
+cons: 13
+int:6
+wis: 14
+cha:16
+cons: 13
+str: 15
+dex: 15
+cons: 14
+int:12
+wis: 13
+cha:7
+cons: 14
+str: 8
+dex: 13
+cons: 11
+int:13
+wis: 12
+cha:11
+cons: 11
+str: 10
+dex: 9
+cons: 14
+int:10
+wis: 11
+cha:11
+cons: 14
+str: 14
+dex: 12
+cons: 10
+int:14
+wis: 16
+cha:12
+cons: 10
+str: 16
+dex: 13
+cons: 14
+int:10
+wis: 16
+cha:12
+cons: 14
+str: 14
+dex: 17
+cons: 11
+int:12
+wis: 16
+cha:15
+cons: 11
+str: 15
+dex: 15
+cons: 15
+int:14
+wis: 18
+cha:16
+cons: 15
+str: 10
+dex: 13
+cons: 16
+int:16
+wis: 17
+cha:15
+cons: 16
+str: 11
+dex: 9
+cons: 15
+int:10
+wis: 9
+cha:7
+cons: 15
+str: 14
+dex: 7
+cons: 16
+int:10
+wis: 13
+cha:18
+cons: 16
+str: 12
+dex: 13
+cons: 13
+int:5
+wis: 14
+cha:12
+cons: 13
+str: 11
+dex: 15
+cons: 11
+int:12
+wis: 17
+cha:15
+cons: 11
+str: 14
+dex: 10
+cons: 11
+int:17
+wis: 13
+cha:12
+cons: 11
+str: 13
+dex: 10
+cons: 12
+int:11
+wis: 9
+cha:14
+cons: 12
+str: 13
+dex: 7
+cons: 8
+int:13
+wis: 17
+cha:11
+cons: 8
+str: 7
+dex: 11
+cons: 15
+int:13
+wis: 11
+cha:12
+cons: 15
+str: 16
+dex: 15
+cons: 12
+int:16
+wis: 14
+cha:18
+cons: 12
+str: 9
+dex: 15
+cons: 15
+int:11
+wis: 12
+cha:15
+cons: 15
+str: 12
+dex: 17
+cons: 17
+int:12
+wis: 15
+cha:8
+cons: 17
+str: 18
+dex: 7
+cons: 15
+int:6
+wis: 11
+cha:15
+cons: 15
+str: 14
+dex: 15
+cons: 12
+int:9
+wis: 17
+cha:17
+cons: 12
+str: 16
+dex: 14
+cons: 7
+int:5
+wis: 11
+cha:17
+cons: 7
+str: 9
+dex: 11
+cons: 17
+int:12
+wis: 15
+cha:9
+cons: 17
+str: 7
+dex: 14
+cons: 8
+int:16
+wis: 13
+cha:13
+cons: 8
+str: 12
+dex: 12
+cons: 17
+int:14
+wis: 13
+cha:9
+cons: 17
+str: 13
+dex: 17
+cons: 10
+int:14
+wis: 13
+cha:12
+cons: 10
+str: 9
+dex: 12
+cons: 13
+int:16
+wis: 14
+cha:10
+cons: 13
+str: 7
+dex: 12
+cons: 17
+int:15
+wis: 16
+cha:10
+cons: 17
+str: 14
+dex: 13
+cons: 14
+int:16
+wis: 8
+cha:13
+cons: 14
+str: 8
+dex: 14
+cons: 8
+int:11
+wis: 16
+cha:8
+cons: 8
+str: 17
+dex: 5
+cons: 9
+int:11
+wis: 12
+cha:16
+cons: 9
+str: 11
+dex: 11
+cons: 10
+int:14
+wis: 15
+cha:14
+cons: 10
+str: 10
+dex: 12
+cons: 16
+int:11
+wis: 10
+cha:15
+cons: 16
+str: 16
+dex: 14
+cons: 11
+int:14
+wis: 15
+cha:8
+cons: 11
+str: 12
+dex: 16
+cons: 13
+int:12
+wis: 13
+cha:17
+cons: 13
+str: 14
+dex: 12
+cons: 8
+int:11
+wis: 15
+cha:12
+cons: 8
+str: 18
+dex: 13
+cons: 11
+int:17
+wis: 16
+cha:12
+cons: 11
+str: 12
+dex: 7
+cons: 13
+int:12
+wis: 15
+cha:7
+cons: 13
+str: 14
+dex: 10
+cons: 11
+int:11
+wis: 12
+cha:9
+cons: 11
+str: 12
+dex: 7
+cons: 12
+int:13
+wis: 12
+cha:17
+cons: 12
+str: 13
+dex: 14
+cons: 11
+int:15
+wis: 9
+cha:7
+cons: 11
+str: 14
+dex: 13
+cons: 4
+int:9
+wis: 7
+cha:10
+cons: 4
+str: 17
+dex: 12
+cons: 13
+int:13
+wis: 15
+cha:13
+cons: 13
+str: 13
+dex: 14
+cons: 11
+int:11
+wis: 12
+cha:12
+cons: 11
+str: 9
+dex: 16
+cons: 17
+int:7
+wis: 15
+cha:9
+cons: 17
+str: 6
+dex: 17
+cons: 10
+int:10
+wis: 10
+cha:13
+cons: 10
+str: 12
+dex: 14
+cons: 11
+int:14
+wis: 15
+cha:10
+cons: 11
+str: 12
+dex: 14
+cons: 12
+int:13
+wis: 5
+cha:12
+cons: 12
+str: 9
+dex: 15
+cons: 14
+int:10
+wis: 15
+cha:11
+cons: 14
+str: 9
+dex: 13
+cons: 12
+int:11
+wis: 12
+cha:15
+cons: 12
+str: 9
+dex: 11
+cons: 13
+int:15
+wis: 15
+cha:16
+cons: 13
+str: 10
+dex: 15
+cons: 16
+int:12
+wis: 16
+cha:11
+cons: 16
+str: 10
+dex: 10
+cons: 11
+int:11
+wis: 17
+cha:15
+cons: 11
+str: 10
+dex: 15
+cons: 8
+int:12
+wis: 15
+cha:15
+cons: 8
+str: 13
+dex: 13
+cons: 15
+int:5
+wis: 14
+cha:16
+cons: 15
+str: 12
+dex: 13
+cons: 14
+int:12
+wis: 14
+cha:11
+cons: 14
+str: 11
+dex: 10
+cons: 7
+int:8
+wis: 11
+cha:9
+cons: 7
+str: 13
+dex: 12
+cons: 10
+int:9
+wis: 13
+cha:12
+cons: 10
+str: 9
+dex: 12
+cons: 13
+int:13
+wis: 9
+cha:14
+cons: 13
+str: 12
+dex: 14
+cons: 8
+int:17
+wis: 11
+cha:12
+cons: 8
+str: 12
+dex: 12
+cons: 15
+int:11
+wis: 18
+cha:7
+cons: 15
+str: 10
+dex: 11
+cons: 15
+int:18
+wis: 9
+cha:10
+cons: 15
+str: 14
+dex: 4
+cons: 15
+int:5
+wis: 14
+cha:14
+cons: 15
+str: 10
+dex: 11
+cons: 10
+int:15
+wis: 9
+cha:10
+cons: 10
+str: 10
+dex: 12
+cons: 12
+int:12
+wis: 12
+cha:11
+cons: 12
+str: 11
+dex: 16
+cons: 15
+int:12
+wis: 9
+cha:11
+cons: 15
+str: 9
+dex: 16
+cons: 12
+int:13
+wis: 8
+cha:18
+cons: 12
+str: 13
+dex: 14
+cons: 14
+int:10
+wis: 3
+cha:10
+cons: 14
+str: 14
+dex: 12
+cons: 14
+int:15
+wis: 10
+cha:7
+cons: 14
+str: 12
+dex: 11
+cons: 12
+int:11
+wis: 15
+cha:9
+cons: 12
+str: 9
+dex: 16
+cons: 18
+int:11
+wis: 15
+cha:8
+cons: 18
+str: 8
+dex: 12
+cons: 13
+int:9
+wis: 13
+cha:11
+cons: 13
+str: 11
+dex: 13
+cons: 16
+int:12
+wis: 13
+cha:15
+cons: 16
+str: 15
+dex: 17
+cons: 12
+int:8
+wis: 10
+cha:6
+cons: 12
+str: 9
+dex: 13
+cons: 11
+int:16
+wis: 12
+cha:13
+cons: 11
+str: 17
+dex: 14
+cons: 16
+int:14
+wis: 11
+cha:16
+cons: 16
+str: 10
+dex: 15
+cons: 13
+int:13
+wis: 14
+cha:17
+cons: 13
+str: 15
+dex: 10
+cons: 13
+int:18
+wis: 12
+cha:16
+cons: 13
+str: 11
+dex: 8
+cons: 11
+int:6
+wis: 10
+cha:11
+cons: 11
+str: 15
+dex: 8
+cons: 10
+int:17
+wis: 10
+cha:11
+cons: 10
+str: 9
+dex: 12
+cons: 13
+int:10
+wis: 15
+cha:8
+cons: 13
+str: 9
+dex: 13
+cons: 15
+int:11
+wis: 10
+cha:11
+cons: 15
+str: 10
+dex: 15
+cons: 16
+int:11
+wis: 14
+cha:15
+cons: 16
+str: 14
+dex: 14
+cons: 11
+int:11
+wis: 18
+cha:4
+cons: 11
+str: 16
+dex: 9
+cons: 15
+int:12
+wis: 10
+cha:12
+cons: 15
+str: 16
+dex: 11
+cons: 18
+int:7
+wis: 14
+cha:10
+cons: 18
+str: 14
+dex: 12
+cons: 14
+int:14
+wis: 9
+cha:13
+cons: 14
+str: 11
+dex: 16
+cons: 10
+int:14
+wis: 14
+cha:7
+cons: 10
+str: 18
+dex: 13
+cons: 15
+int:11
+wis: 13
+cha:11
+cons: 15
+str: 14
+dex: 11
+cons: 12
+int:15
+wis: 9
+cha:5
+cons: 12
+str: 13
+dex: 13
+cons: 11
+int:15
+wis: 13
+cha:15
+cons: 11
+str: 12
+dex: 10
+cons: 7
+int:8
+wis: 8
+cha:10
+cons: 7
+str: 10
+dex: 12
+cons: 15
+int:17
+wis: 9
+cha:10
+cons: 15
+str: 12
+dex: 12
+cons: 12
+int:12
+wis: 14
+cha:17
+cons: 12
+str: 16
+dex: 10
+cons: 14
+int:12
+wis: 16
+cha:13
+cons: 14
+str: 9
+dex: 13
+cons: 16
+int:11
+wis: 15
+cha:11
+cons: 16
+str: 8
+dex: 14
+cons: 13
+int:12
+wis: 17
+cha:11
+cons: 13
+str: 15
+dex: 11
+cons: 14
+int:13
+wis: 10
+cha:18
+cons: 14
+str: 15
+dex: 12
+cons: 12
+int:16
+wis: 11
+cha:16
+cons: 12
+str: 7
+dex: 12
+cons: 14
+int:10
+wis: 8
+cha:12
+cons: 14
+str: 15
+dex: 11
+cons: 6
+int:13
+wis: 13
+cha:9
+cons: 6
+str: 15
+dex: 13
+cons: 13
+int:12
+wis: 11
+cha:11
+cons: 13
+str: 9
+dex: 9
+cons: 8
+int:16
+wis: 12
+cha:13
+cons: 8
+str: 13
+dex: 10
+cons: 14
+int:15
+wis: 15
+cha:12
+cons: 14
+str: 9
+dex: 9
+cons: 13
+int:14
+wis: 13
+cha:12
+cons: 13
+str: 11
+dex: 11
+cons: 18
+int:15
+wis: 17
+cha:15
+cons: 18
+str: 11
+dex: 13
+cons: 13
+int:17
+wis: 7
+cha:16
+cons: 13
+str: 10
+dex: 8
+cons: 12
+int:17
+wis: 15
+cha:17
+cons: 12
+str: 11
+dex: 14
+cons: 8
+int:15
+wis: 8
+cha:6
+cons: 8
+str: 12
+dex: 16
+cons: 11
+int:11
+wis: 12
+cha:16
+cons: 11
+str: 12
+dex: 16
+cons: 12
+int:14
+wis: 12
+cha:13
+cons: 12
+str: 18
+dex: 9
+cons: 9
+int:16
+wis: 11
+cha:13
+cons: 9
+str: 16
+dex: 14
+cons: 12
+int:14
+wis: 11
+cha:17
+cons: 12
+str: 12
+dex: 15
+cons: 11
+int:12
+wis: 10
+cha:15
+cons: 11
+str: 10
+dex: 13
+cons: 9
+int:13
+wis: 7
+cha:11
+cons: 9
+str: 15
+dex: 7
+cons: 11
+int:9
+wis: 14
+cha:14
+cons: 11
+str: 13
+dex: 12
+cons: 11
+int:15
+wis: 12
+cha:12
+cons: 11
+str: 14
+dex: 14
+cons: 11
+int:7
+wis: 15
+cha:11
+cons: 11
+str: 15
+dex: 14
+cons: 6
+int:16
+wis: 9
+cha:13
+cons: 6
+str: 16
+dex: 7
+cons: 11
+int:11
+wis: 6
+cha:9
+cons: 11
+str: 11
+dex: 11
+cons: 15
+int:11
+wis: 8
+cha:11
+cons: 15
+str: 10
+dex: 15
+cons: 15
+int:15
+wis: 16
+cha:13
+cons: 15
+str: 10
+dex: 12
+cons: 13
+int:13
+wis: 13
+cha:16
+cons: 13
+str: 15
+dex: 10
+cons: 5
+int:9
+wis: 11
+cha:10
+cons: 5
+str: 15
+dex: 13
+cons: 14
+int:11
+wis: 15
+cha:11
+cons: 14
+str: 13
+dex: 12
+cons: 11
+int:15
+wis: 16
+cha:16
+cons: 11
+str: 16
+dex: 9
+cons: 10
+int:16
+wis: 11
+cha:16
+cons: 10
+str: 8
+dex: 14
+cons: 13
+int:13
+wis: 14
+cha:17
+cons: 13
+str: 16
+dex: 12
+cons: 10
+int:14
+wis: 13
+cha:9
+cons: 10
+str: 17
+dex: 12
+cons: 13
+int:12
+wis: 10
+cha:10
+cons: 13
+str: 11
+dex: 15
+cons: 7
+int:9
+wis: 9
+cha:16
+cons: 7
+str: 14
+dex: 12
+cons: 9
+int:10
+wis: 11
+cha:12
+cons: 9
+str: 12
+dex: 15
+cons: 8
+int:11
+wis: 18
+cha:9
+cons: 8
+str: 18
+dex: 10
+cons: 14
+int:13
+wis: 17
+cha:10
+cons: 14
+str: 7
+dex: 9
+cons: 15
+int:11
+wis: 15
+cha:9
+cons: 15
+str: 8
+dex: 13
+cons: 17
+int:16
+wis: 12
+cha:18
+cons: 17
+str: 13
+dex: 13
+cons: 17
+int:9
+wis: 15
+cha:13
+cons: 17
+str: 11
+dex: 14
+cons: 10
+int:13
+wis: 12
+cha:14
+cons: 10
+str: 15
+dex: 11
+cons: 7
+int:16
+wis: 10
+cha:10
+cons: 7
+str: 17
+dex: 10
+cons: 10
+int:7
+wis: 6
+cha:12
+cons: 10
+str: 17
+dex: 10
+cons: 8
+int:11
+wis: 14
+cha:12
+cons: 8
+str: 9
+dex: 13
+cons: 15
+int:17
+wis: 8
+cha:8
+cons: 15
+str: 10
+dex: 13
+cons: 17
+int:12
+wis: 5
+cha:16
+cons: 17
+str: 16
+dex: 5
+cons: 8
+int:13
+wis: 14
+cha:11
+cons: 8
+str: 10
+dex: 11
+cons: 10
+int:15
+wis: 10
+cha:13
+cons: 10
+str: 10
+dex: 13
+cons: 9
+int:13
+wis: 13
+cha:10
+cons: 9
+str: 18
+dex: 15
+cons: 14
+int:8
+wis: 12
+cha:10
+cons: 14
+str: 17
+dex: 15
+cons: 12
+int:14
+wis: 10
+cha:8
+cons: 12
+str: 18
+dex: 13
+cons: 13
+int:15
+wis: 14
+cha:18
+cons: 13
+str: 17
+dex: 8
+cons: 8
+int:12
+wis: 9
+cha:13
+cons: 8
+str: 13
+dex: 11
+cons: 9
+int:10
+wis: 11
+cha:15
+cons: 9
+str: 14
+dex: 12
+cons: 13
+int:10
+wis: 11
+cha:12
+cons: 13
+str: 5
+dex: 10
+cons: 12
+int:9
+wis: 8
+cha:13
+cons: 12
+str: 16
+dex: 12
+cons: 16
+int:12
+wis: 11
+cha:9
+cons: 16
+str: 14
+dex: 14
+cons: 12
+int:10
+wis: 9
+cha:11
+cons: 12
+str: 11
+dex: 15
+cons: 13
+int:12
+wis: 15
+cha:11
+cons: 13
+str: 11
+dex: 11
+cons: 11
+int:13
+wis: 15
+cha:18
+cons: 11
+str: 10
+dex: 8
+cons: 8
+int:16
+wis: 7
+cha:12
+cons: 8
+str: 13
+dex: 14
+cons: 15
+int:7
+wis: 11
+cha:10
+cons: 15
+str: 11
+dex: 12
+cons: 9
+int:6
+wis: 15
+cha:9
+cons: 9
+str: 8
+dex: 13
+cons: 7
+int:9
+wis: 16
+cha:6
+cons: 7
+str: 14
+dex: 17
+cons: 14
+int:14
+wis: 13
+cha:12
+cons: 14
+str: 15
+dex: 11
+cons: 12
+int:6
+wis: 14
+cha:11
+cons: 12
+str: 11
+dex: 16
+cons: 13
+int:11
+wis: 11
+cha:11
+cons: 13
+str: 15
+dex: 14
+cons: 10
+int:14
+wis: 11
+cha:14
+cons: 10
+str: 11
+dex: 15
+cons: 6
+int:13
+wis: 16
+cha:16
+cons: 6
+str: 11
+dex: 9
+cons: 11
+int:13
+wis: 11
+cha:14
+cons: 11
+str: 14
+dex: 14
+cons: 17
+int:14
+wis: 13
+cha:16
+cons: 17
+str: 18
+dex: 15
+cons: 9
+int:13
+wis: 15
+cha:9
+cons: 9
+str: 15
+dex: 16
+cons: 15
+int:11
+wis: 10
+cha:15
+cons: 15
+str: 14
+dex: 15
+cons: 15
+int:12
+wis: 12
+cha:14
+cons: 15
+str: 16
+dex: 10
+cons: 16
+int:11
+wis: 12
+cha:14
+cons: 16
+str: 12
+dex: 12
+cons: 9
+int:10
+wis: 12
+cha:13
+cons: 9
+str: 14
+dex: 9
+cons: 13
+int:9
+wis: 14
+cha:12
+cons: 13
+str: 13
+dex: 12
+cons: 10
+int:15
+wis: 14
+cha:8
+cons: 10
+str: 15
+dex: 16
+cons: 6
+int:10
+wis: 12
+cha:12
+cons: 6
+str: 15
+dex: 16
+cons: 16
+int:13
+wis: 15
+cha:8
+cons: 16
+str: 12
+dex: 13
+cons: 13
+int:13
+wis: 11
+cha:11
+cons: 13
+str: 8
+dex: 9
+cons: 18
+int:11
+wis: 13
+cha:10
+cons: 18
+str: 14
+dex: 11
+cons: 11
+int:8
+wis: 11
+cha:13
+cons: 11
+str: 6
+dex: 6
+cons: 11
+int:14
+wis: 11
+cha:8
+cons: 11
+str: 7
+dex: 14
+cons: 15
+int:14
+wis: 11
+cha:11
+cons: 15
+str: 14
+dex: 14
+cons: 15
+int:15
+wis: 11
+cha:11
+cons: 15
+str: 11
+dex: 11
+cons: 13
+int:10
+wis: 16
+cha:16
+cons: 13
+str: 17
+dex: 17
+cons: 12
+int:18
+wis: 9
+cha:13
+cons: 12
+str: 17
+dex: 18
+cons: 16
+int:16
+wis: 11
+cha:14
+cons: 16
+str: 16
+dex: 13
+cons: 18
+int:10
+wis: 15
+cha:7
+cons: 18
+str: 15
+dex: 16
+cons: 14
+int:11
+wis: 13
+cha:11
+cons: 14
+str: 13
+dex: 6
+cons: 14
+int:15
+wis: 15
+cha:13
+cons: 14
+str: 11
+dex: 13
+cons: 8
+int:15
+wis: 13
+cha:13
+cons: 8
+str: 12
+dex: 9
+cons: 11
+int:14
+wis: 12
+cha:15
+cons: 11
+str: 13
+dex: 15
+cons: 9
+int:17
+wis: 14
+cha:12
+cons: 9
+str: 13
+dex: 9
+cons: 13
+int:8
+wis: 13
+cha:12
+cons: 13
+str: 14
+dex: 10
+cons: 10
+int:14
+wis: 10
+cha:9
+cons: 10
+str: 13
+dex: 11
+cons: 10
+int:15
+wis: 7
+cha:14
+cons: 10
+str: 14
+dex: 10
+cons: 15
+int:15
+wis: 10
+cha:10
+cons: 15
+str: 14
+dex: 16
+cons: 12
+int:14
+wis: 15
+cha:14
+cons: 12
+str: 9
+dex: 14
+cons: 7
+int:10
+wis: 13
+cha:8
+cons: 7
+str: 13
+dex: 12
+cons: 9
+int:12
+wis: 13
+cha:13
+cons: 9
+str: 13
+dex: 9
+cons: 7
+int:13
+wis: 12
+cha:12
+cons: 7
+str: 12
+dex: 14
+cons: 15
+int:11
+wis: 12
+cha:15
+cons: 15
+str: 17
+dex: 8
+cons: 17
+int:8
+wis: 10
+cha:14
+cons: 17
+str: 11
+dex: 14
+cons: 14
+int:12
+wis: 17
+cha:8
+cons: 14
+str: 12
+dex: 12
+cons: 10
+int:11
+wis: 16
+cha:10
+cons: 10
+str: 12
+dex: 11
+cons: 16
+int:9
+wis: 16
+cha:6
+cons: 16
+str: 8
+dex: 11
+cons: 14
+int:14
+wis: 15
+cha:14
+cons: 14
+str: 10
+dex: 12
+cons: 8
+int:16
+wis: 17
+cha:14
+cons: 8
+str: 13
+dex: 7
+cons: 13
+int:14
+wis: 11
+cha:17
+cons: 13
+str: 6
+dex: 16
+cons: 10
+int:16
+wis: 9
+cha:15
+cons: 10
+str: 11
+dex: 14
+cons: 9
+int:10
+wis: 11
+cha:15
+cons: 9
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
