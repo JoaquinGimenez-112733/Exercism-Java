@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ArmstrongNumbersTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-03-10T02:47:19" hostname="PC-JOAQUIN" time="0.147">
+  <properties/>
+  <testcase name="threeDigitNumberIsNotArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.114"/>
+  <testcase name="sevenDigitNumberIsNotArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.007"/>
+  <testcase name="noTwoDigitArmstrongNumbers()" classname="ArmstrongNumbersTest" time="0.003"/>
+  <testcase name="singleDigitsAreArmstrongNumbers()" classname="ArmstrongNumbersTest" time="0.001"/>
+  <testcase name="zeroIsArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.002"/>
+  <testcase name="sevenDigitNumberIsArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.002"/>
+  <testcase name="fourDigitNumberIsNotArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.002"/>
+  <testcase name="fourDigitNumberIsArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.001"/>
+  <testcase name="threeDigitNumberIsArmstrongNumber()" classname="ArmstrongNumbersTest" time="0.001"/>
+  <system-out><![CDATA[count is: 1, el numero es: 1
+count is: 1, el numero es: 0
+count is: 1, el numero es: 0
+count is: 4782969, el numero es: 9
+count is: 9565938, el numero es: 9
+count is: 9566066, el numero es: 2
+count is: 9846002, el numero es: 6
+count is: 9848189, el numero es: 3
+count is: 9848190, el numero es: 1
+count is: 9864574, el numero es: 4
+count is: 1, el numero es: 1
+count is: 1, el numero es: 0
+count is: 5, el numero es: 5
+count is: 0, el numero es: 0
+count is: 4782969, el numero es: 9
+count is: 9565938, el numero es: 9
+count is: 9566066, el numero es: 2
+count is: 9846002, el numero es: 6
+count is: 9848189, el numero es: 3
+count is: 9848190, el numero es: 1
+count is: 9926315, el numero es: 5
+count is: 6561, el numero es: 9
+count is: 6817, el numero es: 4
+count is: 9218, el numero es: 7
+count is: 9843, el numero es: 5
+count is: 6561, el numero es: 9
+count is: 6817, el numero es: 4
+count is: 9218, el numero es: 7
+count is: 9474, el numero es: 4
+count is: 1, el numero es: 1
+count is: 126, el numero es: 5
+count is: 153, el numero es: 3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
