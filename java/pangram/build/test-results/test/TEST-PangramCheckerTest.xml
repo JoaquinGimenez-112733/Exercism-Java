@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PangramCheckerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-03-19T15:35:01" hostname="PC-JOAQUIN" time="0.119">
+  <properties/>
+  <testcase name="perfectLowerCasePhraseIsPangram()" classname="PangramCheckerTest" time="0.085"/>
+  <testcase name="phraseWithNumbersIsPangram()" classname="PangramCheckerTest" time="0.004"/>
+  <testcase name="phraseWithUnderscoresIsPangram()" classname="PangramCheckerTest" time="0.003"/>
+  <testcase name="phraseWithOnlyLowerCaseIsPangram()" classname="PangramCheckerTest" time="0.003"/>
+  <testcase name="phraseMissingCharacterXIsNotPangram()" classname="PangramCheckerTest" time="0.002"/>
+  <testcase name="phraseMissingCharacterHIsNotPangram()" classname="PangramCheckerTest" time="0.002"/>
+  <testcase name="phraseWithMissingLettersReplacedByNumbersIsNotPangram()" classname="PangramCheckerTest" time="0.003"/>
+  <testcase name="emptySentenceIsNotPangram()" classname="PangramCheckerTest" time="0.001"/>
+  <testcase name="phraseWithMixedCaseAndPunctuationIsPangram()" classname="PangramCheckerTest" time="0.002"/>
+  <testcase name="caseInsensitivePhraseIsNotPangram()" classname="PangramCheckerTest" time="0.002"/>
+  <system-out><![CDATA[abcdefghijklmnopqrstuvwxyz
+input len: 26
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+sb len: 0
+26
+the 1 quick brown fox jumps over the 2 lazy dogs
+input len: 38
+THE1QUICKBROWNFOXJUMPSOVERTHE2LAZYDOGS
+sb len: 0
+26
+the_quick_brown_fox_jumps_over_the_lazy_dog
+input len: 35
+THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG
+sb len: 0
+26
+the quick brown fox jumps over the lazy dog
+input len: 35
+THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG
+sb len: 0
+26
+a quick movement of the enemy will jeopardize five gunboats
+input len: 50
+AQUICKMOVEMENTOFTHEENEMYWILLJEOPARDIZEFIVEGUNBOATS
+sb len: 0
+25
+five boxing wizards jump quickly at it
+input len: 32
+FIVEBOXINGWIZARDSJUMPQUICKLYATIT
+sb len: 0
+25
+7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog
+input len: 35
+7H3QU1CKBROWNFOXJUMPSOV3R7H3LAZYDOG
+sb len: 0
+23
+
+"Five quacking Zephyrs jolt my wax bed."
+input len: 34
+"FIVEQUACKINGZEPHYRSJOLTMYWAXBED."
+sb len: 0
+26
+abcdefghijklm ABCDEFGHIJKLM
+input len: 26
+ABCDEFGHIJKLMABCDEFGHIJKLM
+sb len: 0
+13
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

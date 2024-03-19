@@ -1,0 +1,51 @@
+abcdefghijklmnopqrstuvwxyz
+input len: 26
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+sb len: 0
+26
+2the 1 quick brown fox jumps over the 2 lazy dogs
+input len: 38
+(THE1QUICKBROWNFOXJUMPSOVERTHE2LAZYDOGS
+sb len: 0
+26
+-the_quick_brown_fox_jumps_over_the_lazy_dog
+input len: 35
+%THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG
+sb len: 0
+26
+-the quick brown fox jumps over the lazy dog
+input len: 35
+%THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG
+sb len: 0
+26
+=a quick movement of the enemy will jeopardize five gunboats
+input len: 50
+4AQUICKMOVEMENTOFTHEENEMYWILLJEOPARDIZEFIVEGUNBOATS
+sb len: 0
+25
+(five boxing wizards jump quickly at it
+input len: 32
+"FIVEBOXINGWIZARDSJUMPQUICKLYATIT
+sb len: 0
+25
+-7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog
+input len: 35
+%7H3QU1CKBROWNFOXJUMPSOV3R7H3LAZYDOG
+sb len: 0
+23
+	
+
+*"Five quacking Zephyrs jolt my wax bed."
+
+input len: 34
+
+$"FIVEQUACKINGZEPHYRSJOLTMYWAXBED."
+
+sb len: 0
+
+26
+abcdefghijklm ABCDEFGHIJKLM
+input len: 26
+ABCDEFGHIJKLMABCDEFGHIJKLM
+sb len: 0
+13

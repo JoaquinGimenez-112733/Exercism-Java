@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NaturalNumberTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-03-19T15:47:18" hostname="PC-JOAQUIN" time="0.41">
+  <properties/>
+  <testcase name="testThatNonNegativeIntegerIsRejected()" classname="NaturalNumberTest" time="0.083"/>
+  <testcase name="testSmallAbundantNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.005"/>
+  <testcase name="testMediumAbundantNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testLargeAbundantNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.105"/>
+  <testcase name="testSmallestPrimeDeficientNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testSmallestNonPrimeDeficientNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testThatOneIsCorrectlyClassifiedAsDeficient()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testSmallPerfectNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testThatNegativeIntegerIsRejected()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testLargePerfectNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.105"/>
+  <testcase name="testLargeDeficientNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.09"/>
+  <testcase name="testMediumDeficientNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.001"/>
+  <testcase name="testMediumPerfectNumberIsClassifiedCorrectly()" classname="NaturalNumberTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
