@@ -1,0 +1,45 @@
+00011
+5
+[JUMP]
+1
+1
+[WINK]
+00001
+5
+[]
+0001
+4
+[JUMP]
+110001
+6
+[WINK, DOUBLE_BLINK]
+001
+3
+[CLOSE_YOUR_EYES]
+1111
+4
+-[WINK, DOUBLE_BLINK, CLOSE_YOUR_EYES, JUMP]
+	01
+	2
+	[DOUBLE_BLINK]
+
+11111
+
+5
+
+-[JUMP, CLOSE_YOUR_EYES, DOUBLE_BLINK, WINK]
+11001
+5
+[DOUBLE_BLINK, WINK]
+11
+2
+[WINK, DOUBLE_BLINK]
+110011
+6
+[DOUBLE_BLINK, WINK]
+0
+1
+[]
+	1111011
+7
+-[WINK, DOUBLE_BLINK, CLOSE_YOUR_EYES, JUMP]

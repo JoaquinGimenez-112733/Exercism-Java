@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HandshakeCalculatorTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2024-03-21T05:09:46" hostname="PC-JOAQUIN" time="0.128">
+  <properties/>
+  <testcase name="testReversingASingleActionYieldsTheSameAction()" classname="HandshakeCalculatorTest" time="0.095"/>
+  <testcase name="testThatInput1YieldsAWink()" classname="HandshakeCalculatorTest" time="0.002"/>
+  <testcase name="testReversingNoActionsYieldsNoActions()" classname="HandshakeCalculatorTest" time="0.002"/>
+  <testcase name="testThatInput8YieldsAJump()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testThatHandlesMoreThanFiveBinaryPlacesWithoutReversal()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testThatInput4YieldsACloseYourEyes()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testInputThatYieldsAllActions()" classname="HandshakeCalculatorTest" time="0.002"/>
+  <testcase name="testThatInput2YieldsADoubleBlink()" classname="HandshakeCalculatorTest" time="0.002"/>
+  <testcase name="testInputThatYieldsAllActionsReversed()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testAnInputThatYieldsTwoReversedActions()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testAnInputThatYieldsTwoActions()" classname="HandshakeCalculatorTest" time="0.002"/>
+  <testcase name="testThatHandlesMoreThanFiveBinaryPlacesWithReversal()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testThatInput0YieldsNoActions()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <testcase name="testInputThatYieldsAllActionsFromMoreThanFiveBinaryPlaces()" classname="HandshakeCalculatorTest" time="0.001"/>
+  <system-out><![CDATA[00011
+5
+[JUMP]
+1
+1
+[WINK]
+00001
+5
+[]
+0001
+4
+[JUMP]
+110001
+6
+[WINK, DOUBLE_BLINK]
+001
+3
+[CLOSE_YOUR_EYES]
+1111
+4
+[WINK, DOUBLE_BLINK, CLOSE_YOUR_EYES, JUMP]
+01
+2
+[DOUBLE_BLINK]
+11111
+5
+[JUMP, CLOSE_YOUR_EYES, DOUBLE_BLINK, WINK]
+11001
+5
+[DOUBLE_BLINK, WINK]
+11
+2
+[WINK, DOUBLE_BLINK]
+110011
+6
+[DOUBLE_BLINK, WINK]
+0
+1
+[]
+1111011
+7
+[WINK, DOUBLE_BLINK, CLOSE_YOUR_EYES, JUMP]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
